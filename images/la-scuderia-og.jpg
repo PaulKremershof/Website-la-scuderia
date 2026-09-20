@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de-DE">
+<head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>Seite nicht gefunden - LASC</title>
+    <link href="https://www.la-scuderia.de/cpresources/8e353b6d/css/selectize.css?v=1660733793" rel="stylesheet">
+<link href="https://www.la-scuderia.de/cpresources/ff0a6d60/css/cp.css?v=1660733793" rel="stylesheet">
+<script>window.Craft = {"actionTrigger":"actions","actionUrl":"https:\/\/www.la-scuderia.de\/index.php?p=actions\/","allowAdminChanges":false,"allowUpdates":true,"allowUppercaseInSlug":false,"announcements":[],"apiParams":null,"asciiCharMap":{"Á":"A","á":"a","Ä":"Ae","ä":"ae","À":"A","à":"a","Â":"A","â":"a","É":"E","é":"e","Ë":"E","ë":"e","È":"E","è":"e","Ê":"E","ê":"e","Í":"I","í":"i","Ï":"I","ï":"i","Ì":"I","ì":"i","Î":"I","î":"i","Ó":"O","ó":"o","Ö":"Oe","ö":"oe","Ò":"O","ò":"o","Ô":"O","ô":"o","Ú":"U","ú":"u","Ü":"Ue","ü":"ue","Ù":"U","ù":"u","Û":"U","û":"u","Ý":"Y","ý":"y","Ÿ":"Y","А":"A","Б":"B","В":"V","Г":"G","Д":"D","Ѓ":"Gj","Е":"E","Ж":"Z","З":"Z","Ѕ":"Dz","И":"I","Ј":"j","К":"K","Л":"L","Љ":"Lj","М":"M","Н":"N","Њ":"Nj","О":"O","П":"P","Р":"R","С":"S","Т":"T","Ќ":"Kj","У":"U","Ф":"F","Х":"X","Ц":"C","Ч":"C","Џ":"Dz","Ш":"S","а":"a","б":"b","в":"v","г":"g","д":"d","ѓ":"gj","е":"e","ж":"z","з":"z","ѕ":"dz","и":"i","ј":"j","к":"k","л":"l","љ":"lj","м":"m","н":"n","њ":"nj","о":"o","п":"p","р":"r","с":"s","т":"t","ќ":"kj","у":"u","ф":"f","х":"x","ц":"c","ч":"c","џ":"dz","ш":"s","æ":"ae","ǽ":"ae","Ã":"A","Å":"A","Ǻ":"A","Ă":"A","Ǎ":"A","Æ":"AE","Ǽ":"AE","ã":"a","å":"a","ǻ":"a","ă":"a","ǎ":"a","ª":"a","Ĉ":"C","Ċ":"C","Ç":"C","ç":"c","ĉ":"c","ċ":"c","Ð":"D","Đ":"D","ð":"d","đ":"d","Ĕ":"E","Ė":"E","ĕ":"e","ė":"e","ƒ":"f","Ĝ":"G","Ġ":"G","ĝ":"g","ġ":"g","Ĥ":"H","Ħ":"H","ĥ":"h","ħ":"h","Ĩ":"I","Ĭ":"I","Ǐ":"I","Į":"I","Ĳ":"IJ","ĩ":"i","ĭ":"i","ǐ":"i","į":"i","ĳ":"ij","Ĵ":"J","ĵ":"j","Ĺ":"L","Ľ":"L","Ŀ":"L","ĺ":"l","ľ":"l","ŀ":"l","Ñ":"N","ñ":"n","ŉ":"n","Õ":"O","Ō":"O","Ŏ":"O","Ǒ":"O","Ő":"O","Ơ":"O","Ø":"O","Ǿ":"O","Œ":"OE","õ":"o","ō":"o","ŏ":"o","ǒ":"o","ő":"o","ơ":"o","ø":"o","ǿ":"o","º":"o","œ":"oe","Ŕ":"R","Ŗ":"R","ŕ":"r","ŗ":"r","Ŝ":"S","Ș":"S","ŝ":"s","ș":"s","ſ":"s","Ţ":"T","Ț":"T","Ŧ":"T","Þ":"TH","ţ":"t","ț":"t","ŧ":"t","þ":"th","Ũ":"U","Ŭ":"U","Ű":"U","Ų":"U","Ư":"U","Ǔ":"U","Ǖ":"U","Ǘ":"U","Ǚ":"U","Ǜ":"U","ũ":"u","ŭ":"u","ű":"u","ų":"u","ư":"u","ǔ":"u","ǖ":"u","ǘ":"u","ǚ":"u","ǜ":"u","Ŵ":"W","ŵ":"w","Ŷ":"Y","ÿ":"y","ŷ":"y","ΑΥ":"AU","ΑΎ":"AU","Αυ":"Au","Αύ":"Au","ΕΊ":"I","ΕΙ":"I","Ει":"Ei","ΕΥ":"EF","ΕΎ":"EU","Εί":"I","Ευ":"Ef","Εύ":"Eu","ΟΙ":"I","ΟΊ":"I","ΟΥ":"U","ΟΎ":"OU","Οι":"Oi","Οί":"I","Ου":"Oy","Ού":"Ou","ΥΙ":"I","ΎΙ":"I","Υι":"Yi","Ύι":"I","ΥΊ":"I","Υί":"I","αυ":"au","αύ":"au","εί":"i","ει":"ei","ευ":"ef","εύ":"eu","οι":"oi","οί":"i","ου":"oy","ού":"ou","υι":"yi","ύι":"i","υί":"i","Α":"A","Ά":"A","Β":"B","Δ":"D","Ε":"E","Έ":"E","Φ":"F","Γ":"G","Η":"H","Ή":"I","Ι":"I","Ί":"I","Ϊ":"I","Κ":"K","Ξ":"Ks","Λ":"L","Μ":"M","Ν":"N","Π":"P","Ο":"O","Ό":"O","Ψ":"Ps","Ρ":"R","Σ":"S","Τ":"T","Θ":"Th","Ω":"O","Ώ":"W","Χ":"X","ϒ":"Y","Υ":"Y","Ύ":"Y","Ϋ":"Y","Ζ":"Z","α":"a","ά":"a","β":"v","δ":"d","ε":"e","έ":"e","φ":"f","γ":"gh","η":"i","ή":"i","ι":"i","ί":"i","ϊ":"i","ΐ":"i","κ":"k","ξ":"ks","λ":"l","μ":"m","ν":"n","ο":"o","ό":"o","π":"p","ψ":"ps","ρ":"r","σ":"s","ς":"s","τ":"t","ϑ":"th","θ":"th","ϐ":"v","ω":"o","ώ":"w","χ":"kh","υ":"i","ύ":"y","ΰ":"y","ϋ":"y","ζ":"z","अ":"a","आ":"aa","ए":"e","ई":"ii","ऍ":"ei","ऎ":"ae","ऐ":"ai","इ":"i","ओ":"o","ऑ":"oi","ऒ":"oii","ऊ":"uu","औ":"ou","उ":"u","ब":"B","भ":"Bha","च":"Ca","छ":"Chha","ड":"Da","ढ":"Dha","फ":"Fa","फ़":"Fi","ग":"Ga","घ":"Gha","ग़":"Ghi","ह":"Ha","ज":"Ja","झ":"Jha","क":"Ka","ख":"Kha","ख़":"Khi","ल":"L","ळ":"Li","ऌ":"Li","ऴ":"Lii","ॡ":"Lii","म":"Ma","न":"Na","ङ":"Na","ञ":"Nia","ण":"Nae","ऩ":"Ni","ॐ":"oms","प":"Pa","क़":"Qi","र":"Ra","ऋ":"Ri","ॠ":"Ri","ऱ":"Ri","स":"Sa","श":"Sha","ष":"Shha","ट":"Ta","त":"Ta","ठ":"Tha","द":"Tha","थ":"Tha","ध":"Thha","ड़":"ugDha","ढ़":"ugDhha","व":"Va","य":"Ya","य़":"Yi","ज़":"Za","Ա":"A","Բ":"B","Գ":"G","Դ":"D","Ե":"E","Զ":"Z","Է":"E","Ը":"Y","Թ":"Th","Ժ":"Zh","Ի":"I","Լ":"L","Խ":"Kh","Ծ":"Ts","Կ":"K","Հ":"H","Ձ":"Dz","Ղ":"Gh","Ճ":"Tch","Մ":"M","Յ":"Y","Ն":"N","Շ":"Sh","Ո":"Vo","Չ":"Ch","Պ":"P","Ջ":"J","Ռ":"R","Ս":"S","Վ":"V","Տ":"T","Ր":"R","Ց":"C","Ւ":"u","Փ":"Ph","Ք":"Q","և":"ev","Օ":"O","Ֆ":"F","ա":"a","բ":"b","գ":"g","դ":"d","ե":"e","զ":"z","է":"e","ը":"y","թ":"th","ժ":"zh","ի":"i","լ":"l","խ":"kh","ծ":"ts","կ":"k","հ":"h","ձ":"dz","ղ":"gh","ճ":"tch","մ":"m","յ":"y","ն":"n","շ":"sh","ո":"vo","չ":"ch","պ":"p","ջ":"j","ռ":"r","ս":"s","վ":"v","տ":"t","ր":"r","ց":"c","ւ":"u","փ":"ph","ք":"q","օ":"o","ֆ":"f","Ž":"Z","Ň":"N","Ş":"S","ž":"z","ň":"n","ş":"s","ı":"i","İ":"I","ğ":"g","Ğ":"G","ьо":"yo","Й":"i","Щ":"Shh","Ъ":"","Ь":"","Ю":"Yu","Я":"Ya","й":"i","щ":"shh","ъ":"","ь":"","ю":"yu","я":"ya","Ē":"E","ē":"e","န်ုပ်":"nub","ောင်":"aung","ိုက်":"aik","ိုဒ်":"ok","ိုင်":"aing","ိုလ်":"ol","ေါင်":"aung","သြော":"aw","ောက်":"auk","ိတ်":"eik","ုတ်":"ok","ုန်":"on","ေတ်":"it","ုဒ်":"ait","ာန်":"an","ိန်":"ein","ွတ်":"ut","ေါ်":"aw","ွန်":"un","ိပ်":"eik","ုပ်":"ok","ွပ်":"ut","ိမ်":"ein","ုမ်":"on","ော်":"aw","ွမ်":"un","က်":"et","ေါ":"aw","ော":"aw","ျွ":"ywa","ြွ":"yw","ို":"o","ုံ":"on","တ်":"at","င်":"in","ည်":"i","ဒ်":"d","န်":"an","ပ်":"at","မ်":"an","စျ":"za","ယ်":"e","ဉ်":"in","စ်":"it","ိံ":"ein","ဲ":"e","း":"","ာ":"a","ါ":"a","ေ":"e","ံ":"an","ိ":"i","ီ":"i","ု":"u","ူ":"u","်":"at","္":"","့":"","က":"k","၉":"9","တ":"t","ရ":"ya","ယ":"y","မ":"m","ဘ":"ba","ဗ":"b","ဖ":"pa","ပ":"p","န":"n","ဓ":"da","ဒ":"d","ထ":"ta","ဏ":"na","ဝ":"w","ဎ":"da","ဍ":"d","ဌ":"ta","ဋ":"t","ည":"ny","ဇ":"z","ဆ":"sa","စ":"s","င":"ng","ဃ":"ga","ဂ":"g","လ":"l","သ":"th","၈":"8","ဩ":"aw","ခ":"kh","၆":"6","၅":"5","၄":"4","၃":"3","၂":"2","၁":"1","၀":"0","၌":"hnaik","၍":"ywae","ဪ":"aw","ဦ":"-u","ဟ":"h","ဉ":"u","ဤ":"-i","ဣ":"i","၏":"-e","ဧ":"e","ှ":"h","ွ":"w","ျ":"ya","ြ":"y","အ":"a","ဠ":"la","၇":"7","DŽ":"DZ","Dž":"Dz","dž":"dz","Ǳ":"DZ","ǲ":"Dz","ǳ":"dz","Ǉ":"LJ","ǈ":"Lj","ǉ":"lj","Ǌ":"NJ","ǋ":"Nj","ǌ":"nj","č":"c","Č":"C","ć":"c","Ć":"C","š":"s","Š":"S","ა":"a","ბ":"b","გ":"g","დ":"d","ე":"e","ვ":"v","ზ":"z","თ":"t","ი":"i","კ":"k","ლ":"l","მ":"m","ნ":"n","ო":"o","პ":"p","ჟ":"zh","რ":"r","ს":"s","ტ":"t","უ":"u","ფ":"f","ქ":"q","ღ":"gh","ყ":"y","შ":"sh","ჩ":"ch","ც":"ts","ძ":"dz","წ":"ts","ჭ":"ch","ხ":"kh","ჯ":"j","ჰ":"h","Ё":"Yo","ё":"yo","Ы":"Y'","ы":"y'","Э":"E'","э":"e'","І":"I","і":"i","Ѳ":"F","ѳ":"f","Ѣ":"E","ѣ":"e","Ѵ":"I","ѵ":"i","Є":"Je","є":"je","Ѥ":"Je","ѥ":"je","Ꙋ":"U","ꙋ":"u","Ѡ":"O","ѡ":"o","Ѿ":"Ot","ѿ":"ot","Ѫ":"U","ѫ":"u","Ѧ":"Ja","ѧ":"ja","Ѭ":"Ju","ѭ":"ju","Ѩ":"Ja","ѩ":"Ja","Ѯ":"Ks","ѯ":"ks","Ѱ":"Ps","ѱ":"ps","Ї":"Yi","ї":"yi","Ґ":"G","ґ":"g","Ә":"A","Ғ":"G","Қ":"Q","Ң":"N","Ө":"O","Ұ":"U","Ү":"U","Һ":"H","ә":"a","ғ":"g","қ":"q","ң":"n","ө":"o","ұ":"u","ү":"u","һ":"h","ď":"d","Ď":"D","ě":"e","Ě":"E","ř":"r","Ř":"R","ť":"t","Ť":"T","ů":"u","Ů":"U","ą":"a","ę":"e","ł":"l","ń":"n","ś":"s","ź":"z","ż":"z","Ą":"A","Ę":"E","Ł":"L","Ń":"N","Ś":"S","Ź":"Z","Ż":"Z","ā":"a","ģ":"g","ī":"i","ķ":"k","ļ":"l","ņ":"n","ū":"u","Ā":"A","Ģ":"G","Ī":"I","Ķ":"k","Ļ":"L","Ņ":"N","Ū":"U","Ả":"A","Ạ":"A","Ắ":"A","Ằ":"A","Ẳ":"A","Ẵ":"A","Ặ":"A","Ấ":"A","Ầ":"A","Ẩ":"A","Ẫ":"A","Ậ":"A","ả":"a","ạ":"a","ắ":"a","ằ":"a","ẳ":"a","ẵ":"a","ặ":"a","ấ":"a","ầ":"a","ẩ":"a","ẫ":"a","ậ":"a","Ẻ":"E","Ẽ":"E","Ẹ":"E","Ế":"E","Ề":"E","Ể":"E","Ễ":"E","Ệ":"E","ẻ":"e","ẽ":"e","ẹ":"e","ế":"e","ề":"e","ể":"e","ễ":"e","ệ":"e","Ỉ":"I","Ị":"I","ỉ":"i","ị":"i","Ỏ":"O","Ọ":"O","Ố":"O","Ồ":"O","Ổ":"O","Ỗ":"O","Ộ":"O","Ớ":"O","Ờ":"O","Ở":"O","Ỡ":"O","Ợ":"O","ỏ":"o","ọ":"o","ố":"o","ồ":"o","ổ":"o","ỗ":"o","ộ":"o","ớ":"o","ờ":"o","ở":"o","ỡ":"o","ợ":"o","Ủ":"U","Ụ":"U","Ứ":"U","Ừ":"U","Ử":"U","Ữ":"U","Ự":"U","ủ":"u","ụ":"u","ứ":"u","ừ":"u","ử":"u","ữ":"u","ự":"u","Ỳ":"Y","Ỷ":"Y","Ỹ":"Y","Ỵ":"Y","ỳ":"y","ỷ":"y","ỹ":"y","ỵ":"y","ا":"a","ب":"b","پ":"b","ت":"t","ث":"th","ج":"g","چ":"ch","ح":"h","خ":"kh","د":"d","ذ":"th","ر":"r","ز":"z","س":"s","ش":"sh","ص":"s","ض":"d","ط":"t","ظ":"th","ع":"aa","غ":"gh","ف":"f","ق":"k","ک":"k","گ":"g","ل":"l","ژ":"zh","ك":"k","م":"m","ن":"n","ه":"h","و":"o","ی":"y","آ":"a","٠":"0","١":"1","٢":"2","٣":"3","٤":"4","٥":"5","٦":"6","٧":"7","٨":"8","٩":"9","أ":"a","ي":"y","إ":"a","ؤ":"o","ئ":"y","ء":"aa","ђ":"dj","ћ":"c","Ђ":"Dj","Ћ":"C","ə":"e","Ə":"E","ß":"ss","ẞ":"SS","ভ্ল":"vl","পশ":"psh","ব্ধ":"bdh","ব্জ":"bj","ব্দ":"bd","ব্ব":"bb","ব্ল":"bl","ভ":"v","ব":"b","চ্ঞ":"cNG","চ্ছ":"cch","চ্চ":"cc","ছ":"ch","চ":"c","ধ্ন":"dhn","ধ্ম":"dhm","দ্ঘ":"dgh","দ্ধ":"ddh","দ্ভ":"dv","দ্ম":"dm","ড্ড":"DD","ঢ":"Dh","ধ":"dh","দ্গ":"dg","দ্দ":"dd","ড":"D","দ":"d","।":".","ঘ্ন":"Ghn","গ্ধ":"Gdh","গ্ণ":"GN","গ্ন":"Gn","গ্ম":"Gm","গ্ল":"Gl","জ্ঞ":"jNG","ঘ":"Gh","গ":"g","হ্ণ":"hN","হ্ন":"hn","হ্ম":"hm","হ্ল":"hl","হ":"h","জ্ঝ":"jjh","ঝ":"jh","জ্জ":"jj","জ":"j","ক্ষ্ণ":"kxN","ক্ষ্ম":"kxm","ক্ষ":"ksh","কশ":"ksh","ক্ক":"kk","ক্ট":"kT","ক্ত":"kt","ক্ল":"kl","ক্স":"ks","খ":"kh","ক":"k","ল্ভ":"lv","ল্ধ":"ldh","লখ":"lkh","লঘ":"lgh","লফ":"lph","ল্ক":"lk","ল্গ":"lg","ল্ট":"lT","ল্ড":"lD","ল্প":"lp","ল্ম":"lm","ল্ল":"ll","ল্ব":"lb","ল":"l","ম্থ":"mth","ম্ফ":"mf","ম্ভ":"mv","মপ্ল":"mpl","ম্ন":"mn","ম্প":"mp","ম্ম":"mm","ম্ল":"ml","ম্ব":"mb","ম":"m","০":"0","১":"1","২":"2","৩":"3","৪":"4","৫":"5","৬":"6","৭":"7","৮":"8","৯":"9","ঙ্ক্ষ":"Ngkx","ঞ্ছ":"nch","ঙ্ঘ":"ngh","ঙ্খ":"nkh","ঞ্ঝ":"njh","ঙ্গৌ":"ngOU","ঙ্গৈ":"ngOI","ঞ্চ":"nc","ঙ্ক":"nk","ঙ্ষ":"Ngx","ঙ্গ":"ngo","ঙ্ম":"Ngm","ঞ্জ":"nj","ন্ধ":"ndh","ন্ঠ":"nTh","ণ্ঠ":"NTh","ন্থ":"nth","ঙ্গা":"nga","ঙ্গি":"ngi","ঙ্গী":"ngI","ঙ্গু":"ngu","ঙ্গূ":"ngU","ঙ্গে":"nge","ঙ্গো":"ngO","ণ্ঢ":"NDh","নশ":"nsh","ঙর":"Ngr","ঞর":"NGr","ংর":"ngr","ঙ":"Ng","ঞ":"NG","ং":"ng","ন্ন":"nn","ণ্ণ":"NN","ণ্ন":"Nn","ন্ম":"nm","ণ্ম":"Nm","ন্দ":"nd","ন্ট":"nT","ণ্ট":"NT","ন্ড":"nD","ণ্ড":"ND","ন্ত":"nt","ন্স":"ns","ন":"n","ণ":"N","ৈ":"OI","ৌ":"OU","ো":"O","ঐ":"OI","ঔ":"OU","অ":"o","ও":"oo","ফ্ল":"fl","প্ট":"pT","প্ত":"pt","প্ন":"pn","প্প":"pp","প্ল":"pl","প্স":"ps","ফ":"f","প":"p","ৃ":"rri","ঋ":"rri","রর‍্য":"rry","্র্য":"ry","্রর":"rr","ড়্গ":"Rg","ঢ়":"Rh","ড়":"R","র":"r","্র":"r","শ্ছ":"Sch","ষ্ঠ":"ShTh","ষ্ফ":"Shf","স্ক্ল":"skl","স্খ":"skh","স্থ":"sth","স্ফ":"sf","শ্চ":"Sc","শ্ত":"St","শ্ন":"Sn","শ্ম":"Sm","শ্ল":"Sl","ষ্ক":"Shk","ষ্ট":"ShT","ষ্ণ":"ShN","ষ্প":"Shp","ষ্ম":"Shm","স্প্ল":"spl","স্ক":"sk","স্ট":"sT","স্ত":"st","স্ন":"sn","স্প":"sp","স্ম":"sm","স্ল":"sl","শ":"S","ষ":"Sh","স":"s","ু":"u","উ":"u","অ্য":"oZ","ত্থ":"tth","ৎ":"tt","ট্ট":"TT","ট্ম":"Tm","ঠ":"Th","ত্ন":"tn","ত্ম":"tm","থ":"th","ত্ত":"tt","ট":"T","ত":"t","অ্যা":"AZ","া":"a","আ":"a","য়া":"ya","য়":"y","ি":"i","ই":"i","ী":"ee","ঈ":"ee","ূ":"uu","ঊ":"uu","ে":"e","এ":"e","য":"z","্য":"Z","ইয়":"y","ওয়":"w","্ব":"w","এক্স":"x","ঃ":":","ঁ":"nn","্‌":"","˚":"0","¹":"1","²":"2","³":"3","⁴":"4","⁵":"5","⁶":"6","⁷":"7","⁸":"8","⁹":"9","₀":"0","₁":"1","₂":"2","₃":"3","₄":"4","₅":"5","₆":"6","₇":"7","₈":"8","₉":"9","௦":"0","௧":"1","௨":"2","௩":"3","௪":"4","௫":"5","௬":"6","௭":"7","௮":"8","௯":"9","௰":"10","௱":"100","௲":"1000","Ꜳ":"AA","ꜳ":"aa","Ꜵ":"AO","ꜵ":"ao","Ꜷ":"AU","ꜷ":"au","Ꜹ":"AV","ꜹ":"av","Ꜻ":"av","ꜻ":"av","Ꜽ":"AY","ꜽ":"ay","ȸ":"db","ʣ":"dz","ʥ":"dz","ʤ":"dezh","🙰":"et","ﬀ":"ff","ﬃ":"ffi","ﬄ":"ffl","ﬁ":"fi","ﬂ":"fl","ʩ":"feng","ʪ":"ls","ʫ":"lz","ɮ":"lezh","ȹ":"qp","ʨ":"tc","ʦ":"ts","ʧ":"tesh","Ꝏ":"OO","ꝏ":"oo","ﬆ":"st","ﬅ":"st","Ꜩ":"TZ","ꜩ":"tz","ᵫ":"ue","Aι":"Ai","αι":"ai","ἀ":"a","ἁ":"a","ἂ":"a","ἃ":"a","ἄ":"a","ἅ":"a","ἆ":"a","ἇ":"a","Ἀ":"A","Ἁ":"A","Ἂ":"A","Ἃ":"A","Ἄ":"A","Ἅ":"A","Ἆ":"A","Ἇ":"A","ᾰ":"a","ᾱ":"a","ᾲ":"a","ᾳ":"a","ᾴ":"a","ᾶ":"a","ᾷ":"a","Ᾰ":"A","Ᾱ":"A","Ὰ":"A","Ά":"A","ᾼ":"A","A̧":"A","a̧":"a","Ⱥ":"A","ⱥ":"a","Ȧ":"A","ȧ":"a","Ɓ":"B","C̈":"C","c̈":"c","C̨":"C","c̨":"c","Ȼ":"C","ȼ":"c","C̀":"C","c̀":"c","C̣":"C","c̣":"c","C̄":"C","c̄":"c","C̃":"C","c̃":"c","Ȩ":"E","ȩ":"e","Ɇ":"E","ɇ":"e","I̧":"I","i̧":"i","Ɨ":"I","ɨ":"i","i":"i","J́́":"J","j́":"j","J̀̀":"J","j̀":"j","J̈":"J","j̈":"j","J̧":"J","j̧":"j","J̨":"J","j̨":"j","Ɉ":"J","ɉ":"j","J̌":"J","ǰ":"j","J̇":"J","j":"j","J̣":"J","j̣":"j","J̄":"J","j̄":"j","J̃":"J","j̃":"j","ĸ":"k","L̀":"L","l̀":"l","L̂":"L","l̂":"l","L̈":"L","l̈":"l","L̨":"L","l̨":"l","Ƚ":"L","ƚ":"l","L̇":"L","l̇":"l","Ḷ":"L","ḷ":"l","L̄":"L","l̄":"l","L̃":"L","l̃":"l","Ŋ":"N","ŋ":"n","Ǹ":"N","ǹ":"n","N̂":"N","n̂":"n","N̈":"N","n̈":"n","N̨":"N","n̨":"n","Ꞥ":"N","ꞥ":"n","Ṅ":"N","ṅ":"n","Ṇ":"N","ṇ":"n","N̄":"N","n̄":"n","O̧":"O","o̧":"o","Ǫ":"O","ǫ":"o","Ɵ":"O","ɵ":"o","Ȯ":"O","ȯ":"o","S̀":"S","s̀":"s","Ŝ̀":"S","S̈":"S","s̈":"s","S̨":"S","s̨":"s","Ꞩ":"S","ꞩ":"s","Ṡ":"S","ṡ":"s","Ṣ":"S","ṣ":"s","S̄":"S","s̄":"s","S̃":"S","s̃":"s","T́":"T","t́":"t","T̀":"T","t̀":"t","T̂":"T","t̂":"t","T̈":"T","ẗ":"t","T̨":"T","t̨":"t","Ⱦ":"T","ⱦ":"t","Ṫ":"T","ṫ":"t","Ṭ":"T","ṭ":"t","T̄":"T","t̄":"t","T̃":"T","t̃":"t","U̧":"U","u̧":"u","Ʉ":"U","ʉ":"u","U̇":"U","u̇":"u","Ʊ":"U","ʊ":"u","Ẁ":"W","ẁ":"w","Ẃ":"W","ẃ":"w","Ẅ":"W","ẅ":"w","Ꙗ":"Ja","ꙗ":"ja","Y̧":"Y","y̧":"y","Y̨":"Y","y̨":"y","Ɏ":"Y","ɏ":"y","Y̌":"Y","y̌":"y","Ẏ":"Y","ẏ":"y","Ȳ":"Y","ȳ":"y","Z̀":"Z","z̀":"z","Ẑ":"Z","ẑ":"z","Z̈":"Z","z̈":"z","Z̧":"Z","z̧":"z","Z̨":"Z","z̨":"z","Ƶ":"Z","ƶ":"z","Ẓ":"Z","ẓ":"z","Z̄":"Z","z̄":"z","Z̃":"Z","z̃":"z"," ":" "," ":" "," ":" "," ":" "," ":" "," ":" "," ":" "," ":" "," ":" "," ":" "," ":" "," ":" "," ":" ","\u2028":" ","\u2029":" ","​":" "," ":" "," ":" ","　":" ","ﾠ":" ","«":"<<","»":">>","‘":"'","’":"'","‚":"'","‛":"'","“":"\"","”":"\"","„":"\"","‟":"\"","‹":"'","›":"'","–":"-","—":"-","…":"...","€":"EUR","$":"$","₢":"Cr","₣":"Fr.","£":"PS","₤":"L.","ℳ":"M","₥":"mil","₦":"N","₧":"Pts","₨":"Rs","රු":"LKR","ரூ":"LKR","௹":"Rs","रू":"NPR","₹":"Rs","૱":"Rs","₩":"W","₪":"NS","₸":"KZT","₫":"D","֏":"AMD","₭":"K","₺":"TL","₼":"AZN","₮":"T","₯":"Dr","₲":"PYG","₾":"GEL","₳":"ARA","₴":"UAH","₽":"RUB","₵":"GHS","₡":"CL","¢":"c","¥":"YEN","円":"JPY","৳":"BDT","元":"CNY","﷼":"SAR","៛":"KR","₠":"ECU","¤":"$?","฿":"THB","؋":"AFN"},"autosaveDrafts":true,"baseApiUrl":"https:\/\/api.craftcms.com\/v1\/","baseCpUrl":"https:\/\/www.la-scuderia.de\/admin","baseSiteUrl":"https:\/\/www.la-scuderia.de\/","baseUrl":"https:\/\/www.la-scuderia.de\/","canAccessQueueManager":false,"clientOs":"Other","cpTrigger":"admin","datepickerOptions":{"constrainInput":false,"dateFormat":"dd.mm.yy","dayNames":["Sonntag","Montag","Dienstag","Mittwoch","Donnerstag","Freitag","Samstag"],"dayNamesMin":["S","M","D","M","D","F","S"],"dayNamesShort":["So.","Mo.","Di.","Mi.","Do.","Fr.","Sa."],"firstDay":1,"monthNames":["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"monthNamesShort":["J","F","M","A","M","J","J","A","S","O","N","D"],"nextText":"Weiter","prevText":"Vorheriger"},"defaultCookieOptions":{"path":"\/","domain":"","secure":true,"sameSite":"strict"},"defaultIndexCriteria":[],"deltaNames":[],"editableCategoryGroups":[],"edition":0,"elementTypeNames":{"craft\\elements\\Asset":["Asset","Dateien","Asset","Dateien"],"craft\\elements\\Category":["Kategorie","Kategorien","Kategorie","Kategorien"],"craft\\elements\\Entry":["Eintrag","Einträge","Eintrag","Einträge"],"craft\\elements\\GlobalSet":["Globaler Satz","Gruppen von globalen Inhalten","Globaler Satz","Gruppen von globalen Inhalten"],"craft\\elements\\MatrixBlock":["Matrix-Block","Matrix-Blöcke","Matrix-Block","Matrix-Blöcke"],"craft\\elements\\Tag":["Schlagwort","Schlagwörter","Schlagwort","Schlagwörter"],"craft\\elements\\User":["Benutzer","Benutzer","Benutzer","Benutzer"],"verbb\\supertable\\elements\\SuperTableBlockElement":["SuperTable Block","SuperTable Blocks","SuperTable block","SuperTable blocks"]},"fileKinds":{"audio":{"label":"Audio","extensions":["3gp","aac","act","aif","aifc","aiff","alac","amr","au","dct","dss","dvf","flac","gsm","iklax","ivs","m4a","m4p","mmf","mp3","mpc","msv","oga","ogg","opus","ra","tta","vox","wav","wma","wv"]},"image":{"label":"Bild","extensions":["bmp","gif","jfif","jp2","jpe","jpeg","jpg","jpx","pam","pfm","pgm","png","pnm","ppm","svg","tif","tiff","webp"]},"excel":{"label":"Excel","extensions":["xls","xlsm","xlsx","xltm","xltx"]},"html":{"label":"HTML","extensions":["htm","html"]},"illustrator":{"label":"Illustrator","extensions":["ai"]},"json":{"label":"JSON","extensions":["json"]},"javascript":{"label":"JavaScript","extensions":["js"]},"compressed":{"label":"Komprimiert","extensions":["7z","bz2","dmg","gz","rar","s7z","tar","tgz","zip","zipx"]},"pdf":{"label":"PDF","extensions":["pdf"]},"php":{"label":"PHP","extensions":["php"]},"photoshop":{"label":"Photoshop","extensions":["psb","psd"]},"powerpoint":{"label":"PowerPoint","extensions":["potx","pps","ppsm","ppsx","ppt","pptm","pptx"]},"text":{"label":"Text","extensions":["text","txt"]},"captionsSubtitles":{"label":"Untertitel","extensions":["asc","cap","cin","dfxp","itt","lrc","mcc","mpsub","rt","sami","sbv","scc","smi","srt","stl","sub","tds","ttml","vtt"]},"video":{"label":"Video","extensions":["asf","asx","avchd","avi","fla","flv","m1s","m2s","m2t","m2v","m4v","mkv","mng","mov","mp2v","mp4","mpeg","mpg","ogg","ogv","qt","rm","vob","webm","wmv"]},"word":{"label":"Word","extensions":["doc","docm","docx","dot","dotm","dotx"]},"xml":{"label":"XML","extensions":["xml"]},"access":{"label":"Zugriff","extensions":["accdb","accde","accdr","accdt","adp","mdb"]}},"handleCasing":"camel","httpProxy":null,"initialDeltaValues":[],"isImagick":false,"isMultiSite":true,"language":"de-DE","left":"left","limitAutoSlugsToAscii":false,"maxUploadSize":16777216,"modifiedDeltaNames":[],"omitScriptNameInUrls":true,"orientation":"ltr","pageNum":1,"pageTrigger":"p","path":"uploads\/restaurantimages\/_goodQuality\/23-06-22-NRW-USA-Eröffnung-©-Urban-Media-Project-111.jpg","pathParam":"p","previewIframeResizerOptions":false,"primarySiteId":1,"primarySiteLanguage":"de-DE","Pro":1,"publishableSections":[],"registeredAssetBundles":{"":""},"registeredJsFiles":{"":""},"remainingSessionTime":0,"right":"right","runQueueAutomatically":true,"scriptName":"index.php","siteId":1,"sites":[{"handle":"default","id":1,"uid":"9fce1e47-dced-4317-a64f-41b47b4582bd","name":"LASC (DE)"},{"handle":"lascEn","id":2,"uid":"31e96c21-44e9-418e-b8ff-8a7308d1ddd9","name":"LASC (EN)"}],"siteToken":"siteToken","slugWordSeparator":"-","Solo":0,"systemUid":"c1fd85f3-75ed-40b9-b54e-c4c582d01405","timepickerOptions":{"closeOnWindowScroll":false,"lang":{"AM":"AM","am":"am","PM":"PM","pm":"pm"},"orientation":"l","timeFormat":"H:i"},"timezone":"America\/Los_Angeles","tokenParam":"token","translations":{"":""},"useCompressedJs":true,"usePathInfo":false,"username":null,"csrfTokenName":"CRAFT_CSRF_TOKEN","csrfTokenValue":"UAFoBW2dJkOnVQgyeOoOMvnrfhLeOA7t00iyxGoQ_1zqFoWvkUryrCBHCVorpGw75mA_QDGlI3-m0hZWmgh3nZsy87IlVKwEi1zhyPV6qsQ="};</script>
+    <meta name="referrer" content="origin-when-cross-origin">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+                    <link rel="icon" href="https://www.la-scuderia.de/cpresources/ff0a6d60/images/icons/favicon.ico">
+        <link rel="icon" type="image/svg+xml" sizes="any" href="https://www.la-scuderia.de/cpresources/ff0a6d60/images/icons/icon.svg">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://www.la-scuderia.de/cpresources/ff0a6d60/images/icons/apple-touch-icon.png">
+        <link rel="mask-icon" href="https://www.la-scuderia.de/cpresources/ff0a6d60/images/icons/safari-pinned-tab.svg" color="#e5422b">
+    
+    <script type="text/javascript">
+        // Fix for Firefox autofocus CSS bug
+        // See: http://stackoverflow.com/questions/18943276/html-5-autofocus-messes-up-css-loading/18945951#18945951
+    </script>
+    </head>
+<body  class="message ltr reduce-focus-visibility" dir="ltr">
+    <a class="skip-link btn" href="#main">zum Inhalt</a>
+    <script>window.d3FormatLocaleDefinition = {"decimal":",","thousands":".","grouping":[3],"currency":"$","numerals":["0","1","2","3","4","5","6","7","8","9"],"percent":"%","minus":"-","nan":"NaN"};
+window.d3TimeFormatLocaleDefinition = {"dateTime":"%A, der %e. %B %Y, %X","date":"%d.%m.%Y","time":"%H:%M:%S","periods":["AM","PM"],"days":["Sonntag","Montag","Dienstag","Mittwoch","Donnerstag","Freitag","Samstag"],"shortDays":["So","Mo","Di","Mi","Do","Fr","Sa"],"months":["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"shortMonths":["Jan","Feb","Mrz","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Dez"]};
+window.d3Formats = {"shortDateFormats":{"day":"%-d.%-m","month":"%-m.%Y","year":"%Y"}};
+if (typeof Craft.translations["app"] === 'undefined') {
+    Craft.translations["app"] = {};
+}
+Craft.translations["app"]["(blank)"] = "(leer)";
+Craft.translations["app"]["<span class=\"visually-hidden\">Characters left:</span> {chars, number}"] = "<span class=\"visually-hidden\">Verbleibende Zeichen:</span> {chars, number}";
+Craft.translations["app"]["A server error occurred."] = "Ein Serverfehler ist aufgetreten.";
+Craft.translations["app"]["Actions"] = "Aktionen";
+Craft.translations["app"]["All"] = "Alle";
+Craft.translations["app"]["Any changes will be lost if you leave this page."] = "Änderungen werden beim Verlassen dieser Seite nicht gespeichert.";
+Craft.translations["app"]["Apply this to the {number} remaining conflicts?"] = "Dies auch für die {number} verbleibenden Konflikte anwenden?";
+Craft.translations["app"]["Apply"] = "Anwenden";
+Craft.translations["app"]["Are you sure you want to close the editor? Any changes will be lost."] = "Möchten Sie den Editor wirklich schließen? Alle Änderungen gehen damit verloren.";
+Craft.translations["app"]["Are you sure you want to delete this image?"] = "Möchten Sie dieses Bild wirklich löschen?";
+Craft.translations["app"]["Are you sure you want to delete “{name}”?"] = "Sind Sie sicher, dass Sie „{name}“ wirklich löschen möchten?";
+Craft.translations["app"]["Are you sure you want to discard your changes?"] = "Sind Sie sicher, dass Sie Ihre Änderungen verwerfen wollen?";
+Craft.translations["app"]["Are you sure you want to transfer your license to this domain?"] = "Sind Sie sicher, dass Sie Ihre Lizenz auf diese Domain übertragen möchten?";
+Craft.translations["app"]["Buy {name}"] = "{name} kaufen";
+Craft.translations["app"]["Cancel"] = "Abbrechen";
+Craft.translations["app"]["Choose a user"] = "Wählen Sie einen Benutzer aus";
+Craft.translations["app"]["Choose which table columns should be visible for this source, and in which order."] = "Wählen Sie, welche Tabellenspalten für diese Quelle sichtbar sein sollen und in welcher Reihenfolge.";
+Craft.translations["app"]["Clear"] = "Löschen";
+Craft.translations["app"]["Close Preview"] = "Vorschau schließen";
+Craft.translations["app"]["Close"] = "Schließen";
+Craft.translations["app"]["Color hex value"] = "Hexadezimaler Farbwert";
+Craft.translations["app"]["Color picker"] = "Farbwähler";
+Craft.translations["app"]["Continue"] = "Weiter";
+Craft.translations["app"]["Copied to clipboard."] = "In die Zwischenablage kopiert.";
+Craft.translations["app"]["Copy the URL"] = "Die URL kopieren";
+Craft.translations["app"]["Copy the reference tag"] = "Referenz-Schlagwort kopieren";
+Craft.translations["app"]["Copy to clipboard"] = "In die Zwischenablage kopieren";
+Craft.translations["app"]["Couldn’t delete “{name}”."] = "„{name}“ konnte nicht gelöscht löschen.";
+Craft.translations["app"]["Couldn’t save new order."] = "Neuer Auftrag konnte nicht gespeichert werden.";
+Craft.translations["app"]["Create"] = "Erstellen";
+Craft.translations["app"]["Delete folder"] = "Ordner löschen";
+Craft.translations["app"]["Delete heading"] = "Kopfzeile löschen";
+Craft.translations["app"]["Delete their content"] = "Deren Inhalt löschen";
+Craft.translations["app"]["Delete them"] = "Lösche sie";
+Craft.translations["app"]["Delete {num, plural, =1{user} other{users}} and content"] = "Lösche {num, plural, one {} =1{Benutzer} other{Benutzer}} und Inhalt";
+Craft.translations["app"]["Delete {num, plural, =1{user} other{users}}"] = "Lösche {num, plural, one {} =1{Benutzer} other{Benutzer}}";
+Craft.translations["app"]["Delete"] = "Löschen";
+Craft.translations["app"]["Device type"] = "Gerätetyp";
+Craft.translations["app"]["Discard changes"] = "Änderungen verwerfen";
+Craft.translations["app"]["Display as thumbnails"] = "Als Thumbnails anzeigen";
+Craft.translations["app"]["Display in a table"] = "Als Tabelle anzeigen";
+Craft.translations["app"]["Done"] = "Fertig";
+Craft.translations["app"]["Draft Name"] = "Entwurfname";
+Craft.translations["app"]["Edit draft settings"] = "Bearbeite Entwurfseinstellungen";
+Craft.translations["app"]["Edit"] = "Bearbeiten";
+Craft.translations["app"]["Edited"] = "Bearbeitet";
+Craft.translations["app"]["Elements"] = "Elemente";
+Craft.translations["app"]["Enabled for {site}"] = "Aktiviert für {site}";
+Craft.translations["app"]["Enabled"] = "Aktiviert";
+Craft.translations["app"]["Enter the name of the folder"] = "Geben Sie den Namen des Ordners ein";
+Craft.translations["app"]["Enter your password to continue."] = "Geben Sie Ihr Passwort ein, um fortzufahren.";
+Craft.translations["app"]["Enter your password to log back in."] = "Geben Sie Ihr Passwort ein, um sich erneut anzumelden.";
+Craft.translations["app"]["Error"] = "Fehler";
+Craft.translations["app"]["Export Type"] = "Exporttyp";
+Craft.translations["app"]["Export"] = "Exportieren";
+Craft.translations["app"]["Export…"] = "Exportieren…";
+Craft.translations["app"]["Failed"] = "Fehlgeschlagen";
+Craft.translations["app"]["From {date}"] = "Vom {date}";
+Craft.translations["app"]["From"] = "Vom";
+Craft.translations["app"]["Give your tab a name."] = "Geben Sie Ihrem Tab einen Namen.";
+Craft.translations["app"]["Handle"] = "Kurzname";
+Craft.translations["app"]["Header Column Heading"] = "Kopfzeilen-Spaltenüberschrift";
+Craft.translations["app"]["Heading"] = "Kopfzeile";
+Craft.translations["app"]["Hide nested sources"] = "Geschachtelte Quellen ausblenden";
+Craft.translations["app"]["Hide sidebar"] = "Seitenleiste ausblenden";
+Craft.translations["app"]["Hide"] = "Ausblenden";
+Craft.translations["app"]["Incorrect password."] = "Falsches Passwort.";
+Craft.translations["app"]["Instructions"] = "Anweisungen";
+Craft.translations["app"]["Keep both"] = "Beide behalten";
+Craft.translations["app"]["Keep me logged in"] = "Angemeldet bleiben";
+Craft.translations["app"]["Keep them"] = "Behalte sie";
+Craft.translations["app"]["License transferred."] = "Lizenz übertragen.";
+Craft.translations["app"]["Limit"] = "Begrenzung";
+Craft.translations["app"]["Loading"] = "Wird geladen";
+Craft.translations["app"]["Log out now"] = "Jetzt ausloggen";
+Craft.translations["app"]["Login"] = "Anmelden";
+Craft.translations["app"]["Make not required"] = "Als „nicht benötigt“ markieren";
+Craft.translations["app"]["Make required"] = "Als „benötigt“ markieren";
+Craft.translations["app"]["Merge the folder (any conflicting files will be replaced)"] = "Ordner zusammenführen (alle miteinander in Konflikt stehenden Dateien werden ersetzt)";
+Craft.translations["app"]["More"] = "Mehr";
+Craft.translations["app"]["Move down"] = "Nach unten schieben";
+Craft.translations["app"]["Move up"] = "Nach oben schieben";
+Craft.translations["app"]["Move"] = "Verschieben";
+Craft.translations["app"]["New category"] = "Neue Kategorie";
+Craft.translations["app"]["New child"] = "Neue Unter-Ebene";
+Craft.translations["app"]["New entry"] = "Neuer Eintrag";
+Craft.translations["app"]["New heading"] = "Neue Kopfzeile";
+Craft.translations["app"]["New order saved."] = "Die neue Reihenfolge wurde gespeichert.";
+Craft.translations["app"]["New position saved."] = "Die neue Position wurde gespeichert.";
+Craft.translations["app"]["New subfolder"] = "Neuer Unterordner";
+Craft.translations["app"]["New {group} category"] = "Neue {group}-Kategorie";
+Craft.translations["app"]["New {section} entry"] = "Neuer Eintrag in „{section}“";
+Craft.translations["app"]["Next Page"] = "Nächste Seite";
+Craft.translations["app"]["No limit"] = "Keine Beschränkung";
+Craft.translations["app"]["Notes"] = "Anmerkungen";
+Craft.translations["app"]["Notice"] = "Hinweis";
+Craft.translations["app"]["Open the full edit page in a new tab"] = "Öffnen Sie die vollständige Bearbeitungsseite in einem neuen Tab";
+Craft.translations["app"]["Options"] = "Einstellungen";
+Craft.translations["app"]["Password"] = "Passwort";
+Craft.translations["app"]["Past year"] = "Vergangenes Jahr";
+Craft.translations["app"]["Past {num} days"] = "Vergangene {num} Tage";
+Craft.translations["app"]["Pay {price}"] = "{price} bezahlen";
+Craft.translations["app"]["Pending"] = "Anstehend";
+Craft.translations["app"]["Phone"] = "Telefon";
+Craft.translations["app"]["Previous Page"] = "Vorherige Seite";
+Craft.translations["app"]["Really delete folder “{folder}”?"] = "Ordner „{folder}“ wirklich löschen?";
+Craft.translations["app"]["Refresh"] = "Aktualisieren";
+Craft.translations["app"]["Remove"] = "Entfernen";
+Craft.translations["app"]["Rename folder"] = "Ordner umbenennen";
+Craft.translations["app"]["Rename"] = "Umbenennen";
+Craft.translations["app"]["Reorder"] = "Umsortieren";
+Craft.translations["app"]["Replace it"] = "Ersetzen";
+Craft.translations["app"]["Replace the folder (all existing files will be deleted)"] = "Ordner ersetzen (alle darin befindlichen Dateien werden gelöscht)";
+Craft.translations["app"]["Rotate"] = "Drehen";
+Craft.translations["app"]["Save as a new asset"] = "Als neues Asset speichern";
+Craft.translations["app"]["Save"] = "Speichern";
+Craft.translations["app"]["Saved {timestamp} by {creator}"] = "Gespeichert {timestamp} von {creator}";
+Craft.translations["app"]["Saved {timestamp}"] = "Gespeichert: {timestamp}";
+Craft.translations["app"]["Saving"] = "Speichern";
+Craft.translations["app"]["Score"] = "Ergebnis";
+Craft.translations["app"]["Search in subfolders"] = "In Unterordnern suchen";
+Craft.translations["app"]["Select all"] = "Alle auswählen";
+Craft.translations["app"]["Select transform"] = "Transformationen auswählen";
+Craft.translations["app"]["Select"] = "Auswählen";
+Craft.translations["app"]["Settings"] = "Einstellungen";
+Craft.translations["app"]["Show nav"] = "Navigationsleiste anzeigen";
+Craft.translations["app"]["Show nested sources"] = "Geschachtelte Quellen anzeigen";
+Craft.translations["app"]["Show sidebar"] = "Seitenleiste anzeigen";
+Craft.translations["app"]["Show"] = "Zeigen";
+Craft.translations["app"]["Show/hide children"] = "Untere Ebenen anzeigen/verstecken";
+Craft.translations["app"]["Showing your unsaved changes."] = "Zeigt Ihre nicht gespeicherten Änderungen an.";
+Craft.translations["app"]["Sort by {attribute}"] = "Sortieren nach {attribute}";
+Craft.translations["app"]["Source settings saved"] = "Die Quelleneinstellungen wurden gespeichert";
+Craft.translations["app"]["Structure"] = "Struktur";
+Craft.translations["app"]["Submit"] = "Absenden";
+Craft.translations["app"]["Switching sites will lose unsaved changes. Are you sure you want to switch sites?"] = "Wenn Sie auf andere Websites umschalten, gehen ungespeicherte Veränderungen verloren. Sind Sie sicher, dass Sie umschalten möchten?";
+Craft.translations["app"]["Table Columns"] = "Tabellenspalten";
+Craft.translations["app"]["The draft could not be saved."] = "Der Entwurf konnte nicht gespeichert werden.";
+Craft.translations["app"]["The draft has been saved."] = "Der Entwurf wurde gespeichert.";
+Craft.translations["app"]["This can be left blank if you just want an unlabeled separator."] = "Dies kann leer bleiben, falls Sie nur einen unbezeichneten Separator möchten.";
+Craft.translations["app"]["This field has been modified."] = "Dieses Feld wurde modifiziert.";
+Craft.translations["app"]["This month"] = "Diesen Monat";
+Craft.translations["app"]["This week"] = "Diese Woche";
+Craft.translations["app"]["This year"] = "Dieses Jahr";
+Craft.translations["app"]["To {date}"] = "Bis {date}";
+Craft.translations["app"]["To"] = "Bis";
+Craft.translations["app"]["Today"] = "Heute";
+Craft.translations["app"]["Transfer it to:"] = "Übertragen nach:";
+Craft.translations["app"]["Try again"] = "Erneut versuchen";
+Craft.translations["app"]["Update {type}"] = "Aktualisiere {type}";
+Craft.translations["app"]["Upload a file"] = "Datei hochladen";
+Craft.translations["app"]["Upload failed for {filename}"] = "{filename} konnte nicht hochgeladen werden.";
+Craft.translations["app"]["Upload files"] = "Dateien hochladen";
+Craft.translations["app"]["View"] = "Ansicht";
+Craft.translations["app"]["What do you want to do with their content?"] = "Was möchten Sie mit deren Inhalten machen?";
+Craft.translations["app"]["What do you want to do?"] = "Was möchten Sie tun?";
+Craft.translations["app"]["Your changes could not be stored."] = "Ihre Änderungen konnten nicht gespeichert werden.";
+Craft.translations["app"]["Your changes have been stored."] = "Ihre Änderungen wurden gespeichert.";
+Craft.translations["app"]["Your session has ended."] = "Ihre Sitzung ist abgelaufen.";
+Craft.translations["app"]["Your session will expire in {time}."] = "Ihre Sitzung läuft ab in {time}.";
+Craft.translations["app"]["by {creator}"] = "von {creator}";
+Craft.translations["app"]["day"] = "Tag";
+Craft.translations["app"]["days"] = "Tage";
+Craft.translations["app"]["hour"] = "Stunde";
+Craft.translations["app"]["hours"] = "Stunden";
+Craft.translations["app"]["minute"] = "Minute";
+Craft.translations["app"]["minutes"] = "Minuten";
+Craft.translations["app"]["second"] = "Sekunde";
+Craft.translations["app"]["seconds"] = "Sekunden";
+Craft.translations["app"]["week"] = "Woche";
+Craft.translations["app"]["weeks"] = "Wochen";
+Craft.translations["app"]["{ctrl}C to copy."] = "{ctrl}C zum Kopieren.";
+Craft.translations["app"]["{first, number}-{last, number} of {total, number} {total, plural, =1{{item}} other{{items}}}"] = "{first, number}-{last, number} von {total, number} {total, plural, =1{{item}} other{{items}}}";
+Craft.translations["app"]["{first}-{last} of {total}"] = "{first}-{last} von {total}";
+Craft.translations["app"]["{num, number} {num, plural, =1{Available Update} other{Available Updates}}"] = "{num, number} {num, plural, =1{verfügbares Update} other{verfügbare Updates}}";
+Craft.translations["app"]["{type} saved."] = "{type} gespeichert.";
+Craft.translations["app"]["“{name}” deleted."] = "„{name}“ wurde gelöscht.";</script>
+        <div class="message-container">
+        <div id="message" class="pane">
+                <h2>Seite nicht gefunden</h2>
+    <p>Seite nicht gefunden.</p>
+        </div>
+    </div>
+        <script type="text/javascript">
+        var message = document.getElementById('message'),
+            margin = -Math.round(message.offsetHeight / 2);
+        message.setAttribute('style', 'margin-top: '+margin+'px !important;');
+    </script>
+    <script src="https://www.la-scuderia.de/cpresources/ca219aa2/axios.js?v=1660733793"></script>
+<script src="https://www.la-scuderia.de/cpresources/62a757e6/d3.js?v=1660733793"></script>
+<script src="https://www.la-scuderia.de/cpresources/7a937217/element-resize-detector.js?v=1660733793"></script>
+<script src="https://www.la-scuderia.de/cpresources/ba68db6f/focus-visible.js?v=1660733793"></script>
+<script src="https://www.la-scuderia.de/cpresources/545e3e3c/jquery.js?v=1660733793"></script>
+<script src="https://www.la-scuderia.de/cpresources/2a34a96/jquery.mobile-events.js?v=1660733793"></script>
+<script src="https://www.la-scuderia.de/cpresources/e4934e88/velocity.js?v=1660733793"></script>
+<script src="https://www.la-scuderia.de/cpresources/daf9f117/garnish.js?v=1660733793"></script>
+<script src="https://www.la-scuderia.de/cpresources/5eb9ae2a/jquery-ui.js?v=1660733793"></script>
+<script src="https://www.la-scuderia.de/cpresources/2f095f4/jquery.payment.js?v=1660733793"></script>
+<script src="https://www.la-scuderia.de/cpresources/f7d69e8e/datepicker-de.js?v=1660733846"></script>
+<script src="https://www.la-scuderia.de/cpresources/71ead9ed/picturefill.js?v=1660733793"></script>
+<script src="https://www.la-scuderia.de/cpresources/8e353b6d/selectize.js?v=1660733793"></script>
+<script src="https://www.la-scuderia.de/cpresources/72f41a03/jquery.fileupload.js?v=1660733793"></script>
+<script src="https://www.la-scuderia.de/cpresources/d6e72be1/xregexp-all.js?v=1660733793"></script>
+<script src="https://www.la-scuderia.de/cpresources/f24bc600/fabric.js?v=1660733793"></script>
+<script src="https://www.la-scuderia.de/cpresources/82ea14c9/iframeResizer.js?v=1660733793"></script>
+<script src="https://www.la-scuderia.de/cpresources/ff0a6d60/cp.js?v=1660733793"></script>
+</body>
+</html>

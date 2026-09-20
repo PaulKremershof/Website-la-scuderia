@@ -1,0 +1,15 @@
+# robots.txt for La Scuderia Restaurant
+# https://www.la-scuderia.de
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.la-scuderia.de/sitemap.xml
+
+# Crawl-delay (optional, adjust if needed)
+# Crawl-delay: 10
+
+# Disallow specific paths if needed
+# Disallow: /admin/
+# Disallow: /private/

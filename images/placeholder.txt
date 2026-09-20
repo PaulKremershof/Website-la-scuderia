@@ -1,0 +1,19 @@
+Image Placeholders for La Scuderia Website
+==========================================
+
+Required images:
+1. logo.svg - Restaurant logo
+2. hero-bg.jpg - Hero section background image
+3. restaurant-1.jpg - Interior restaurant photo
+4. restaurant-2.jpg - Garden area photo
+5. kitchen-1.jpg - Kitchen/food photo
+6. wine-1.jpg - Wine cellar photo
+7. la-scuderia-og.jpg - Open Graph social media image (1200x630px recommended)
+
+For responsive images, create multiple sizes:
+- *-400.jpg (400px width)
+- *-800.jpg (800px width)
+- *-1200.jpg (1200px width)
+
+Note: Replace these placeholders with actual high-quality images from the restaurant.
+All images should have proper alt text as defined in the HTML files.
