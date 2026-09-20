@@ -1,0 +1,23 @@
+# La Scuderia CMS - Access Protection
+# Uncomment and configure for production use
+
+# Password Protection (recommended for production)
+# AuthType Basic
+# AuthName "La Scuderia Admin"
+# AuthUserFile /full/path/to/.htpasswd
+# Require valid-user
+
+# IP Restriction (optional - add your IP addresses)
+# Order Deny,Allow
+# Deny from all
+# Allow from 192.168.1.100
+# Allow from YOUR_IP_ADDRESS
+
+# Prevent directory listing
+Options -Indexes
+
+# Protect sensitive files
+<FilesMatch "\.(json|log|bak)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
