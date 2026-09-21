@@ -16,15 +16,15 @@
     "instagram": "https://www.instagram.com/lascuderia_frankfurt/?hl=de"
   },
   "opening_hours": {
-    "days": "Montag – Samstag",
-    "lunch": "12.00 – 15.00 Uhr",
-    "dinner": "18.30 – 24.00 Uhr",
+    "days": "Montag - Samstag",
+    "lunch": "12.00 - 15.00 Uhr",
+    "dinner": "18.30 - 24.00 Uhr",
     "note": "Unser Restaurant ist klimatisiert."
   },
   "sections": {
     "hero_quote": {
-      "text_de": "„Restaurants wie La Scuderia füllen eine große Lücke. Der Italiener setzt auf zeitlose Qualität und ist für die Restaurantkultur der Main Metropole unverzichtbar."",
-      "text_en": "\"Restaurants like La Scuderia fill a great gap. This Italian restaurant focuses on timeless quality and is indispensable for the restaurant culture of the Main metropolis.\"",
+      "text_de": "Restaurants wie La Scuderia füllen eine große Lücke. Der Italiener setzt auf zeitlose Qualität und ist für die Restaurantkultur der Main Metropole unverzichtbar.",
+      "text_en": "Restaurants like La Scuderia fill a great gap. This Italian restaurant focuses on timeless quality and is indispensable for the restaurant culture of the Main metropolis.",
       "author": "Jürgen Dollase, FAS"
     },
     "restaurant": {

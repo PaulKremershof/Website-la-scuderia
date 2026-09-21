@@ -5,22 +5,56 @@ let hasChanges = false;
 
 // Initialize
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('CMS Admin initialized');
+    showLoading(true);
     loadContent();
     initNavigation();
     initEventListeners();
 });
 
+// Show/hide loading indicator
+function showLoading(show) {
+    const loader = document.getElementById('loading-indicator');
+    if (loader) {
+        loader.style.display = show ? 'block' : 'none';
+    }
+}
+
 // Load content from JSON
 async function loadContent() {
     try {
+        console.log('Loading content from ../data/content.json...');
         const response = await fetch('../data/content.json');
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
         contentData = await response.json();
+        console.log('Content loaded successfully:', contentData);
+        
         populateFields();
         loadImages();
         loadMenu();
+        
+        showLoading(false);
+        showToast('✅ Content loaded successfully!', 'success');
     } catch (error) {
         console.error('Error loading content:', error);
-        showToast('Error loading content', 'error');
+        showToast('⚠️ Error loading content: ' + error.message, 'error');
+        
+        // Try to load from localStorage as fallback
+        const savedData = localStorage.getItem('lascuderia_content');
+        if (savedData) {
+            contentData = JSON.parse(savedData);
+            populateFields();
+            loadImages();
+            loadMenu();
+            showLoading(false);
+            showToast('📦 Loaded from browser storage', 'success');
+        } else {
+            showLoading(false);
+        }
     }
 }
 
