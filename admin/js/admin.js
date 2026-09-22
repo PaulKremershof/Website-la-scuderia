@@ -187,6 +187,71 @@ async function saveContent() {
     contentData.sections.wine.text_de = document.getElementById('content-wine-de').value;
     contentData.sections.wine.text_en = document.getElementById('content-wine-en').value;
 
+    // Save Links & Navigation data
+    if (document.getElementById('social-instagram')) {
+        if (!contentData.social_links) contentData.social_links = {};
+        contentData.social_links.instagram = document.getElementById('social-instagram').value;
+        contentData.social_links.facebook = document.getElementById('social-facebook').value;
+        contentData.social_links.twitter = document.getElementById('social-twitter').value;
+    }
+
+    if (document.getElementById('footer-privacy-de')) {
+        if (!contentData.footer_links) contentData.footer_links = {};
+        contentData.footer_links.privacy_de = document.getElementById('footer-privacy-de').value;
+        contentData.footer_links.privacy_en = document.getElementById('footer-privacy-en').value;
+        contentData.footer_links.imprint_de = document.getElementById('footer-imprint-de').value;
+        contentData.footer_links.imprint_en = document.getElementById('footer-imprint-en').value;
+    }
+
+    if (document.getElementById('cta-reservation-de')) {
+        if (!contentData.cta_buttons) contentData.cta_buttons = {};
+        if (!contentData.cta_buttons.reservation) contentData.cta_buttons.reservation = {};
+        if (!contentData.cta_buttons.phone) contentData.cta_buttons.phone = {};
+        
+        contentData.cta_buttons.reservation.text_de = document.getElementById('cta-reservation-de').value;
+        contentData.cta_buttons.reservation.text_en = document.getElementById('cta-reservation-en').value;
+        contentData.cta_buttons.phone.url = document.getElementById('cta-phone-url').value;
+    }
+
+    // Save Code Injection data
+    if (document.getElementById('code-head')) {
+        if (!contentData.code_injection) contentData.code_injection = {};
+        contentData.code_injection.head_scripts = document.getElementById('code-head').value;
+        contentData.code_injection.body_scripts = document.getElementById('code-body').value;
+        contentData.code_injection.opentable_widget = document.getElementById('code-opentable').value;
+    }
+
+    // Save AI Optimization data
+    if (document.getElementById('ai-voice-phrases')) {
+        if (!contentData.ai_optimization) contentData.ai_optimization = {};
+        
+        const phrases = document.getElementById('ai-voice-phrases').value;
+        contentData.ai_optimization.voice_search_phrases = phrases.split(',').map(p => p.trim()).filter(p => p);
+        
+        contentData.ai_optimization.ai_description = document.getElementById('ai-description').value;
+        
+        if (!contentData.ai_optimization.chatgpt_tags) contentData.ai_optimization.chatgpt_tags = {};
+        contentData.ai_optimization.chatgpt_tags.cuisine_type = document.getElementById('ai-cuisine').value;
+        contentData.ai_optimization.chatgpt_tags.price_level = document.getElementById('ai-price').value;
+        
+        const specialties = document.getElementById('ai-specialties').value;
+        contentData.ai_optimization.chatgpt_tags.specialties = specialties.split(',').map(s => s.trim()).filter(s => s);
+        
+        const bestFor = document.getElementById('ai-best-for').value;
+        contentData.ai_optimization.chatgpt_tags.best_for = bestFor.split(',').map(b => b.trim()).filter(b => b);
+    }
+
+    // Save Schema.org data
+    if (document.getElementById('schema-chef-name')) {
+        if (!contentData.schema_enhanced) contentData.schema_enhanced = {};
+        if (!contentData.schema_enhanced.chef) contentData.schema_enhanced.chef = {};
+        
+        contentData.schema_enhanced.chef.name = document.getElementById('schema-chef-name').value;
+        contentData.schema_enhanced.chef.since = document.getElementById('schema-chef-since').value;
+        contentData.schema_enhanced.average_rating = parseFloat(document.getElementById('schema-rating').value) || 0;
+        contentData.schema_enhanced.review_count = parseInt(document.getElementById('schema-reviews').value) || 0;
+    }
+
     try {
         const response = await fetch('api/save.php', {
             method: 'POST',
@@ -416,3 +481,376 @@ function showToast(message, type = 'success') {
         toast.classList.remove('show');
     }, 3000);
 }
+
+// ============================================
+// NEW FUNCTIONALITY FOR ENHANCED CMS
+// ============================================
+
+// Load Links & Navigation data
+function loadLinksData() {
+    if (!contentData.navigation) return;
+    
+    // Load navigation menu
+    loadNavigationMenu();
+    
+    // Load social links
+    document.getElementById('social-instagram').value = contentData.social_links?.instagram || '';
+    document.getElementById('social-facebook').value = contentData.social_links?.facebook || '';
+    document.getElementById('social-twitter').value = contentData.social_links?.twitter || '';
+    
+    // Load footer links
+    document.getElementById('footer-privacy-de').value = contentData.footer_links?.privacy_de || '';
+    document.getElementById('footer-privacy-en').value = contentData.footer_links?.privacy_en || '';
+    document.getElementById('footer-imprint-de').value = contentData.footer_links?.imprint_de || '';
+    document.getElementById('footer-imprint-en').value = contentData.footer_links?.imprint_en || '';
+    
+    // Load CTA buttons
+    document.getElementById('cta-reservation-de').value = contentData.cta_buttons?.reservation?.text_de || '';
+    document.getElementById('cta-reservation-en').value = contentData.cta_buttons?.reservation?.text_en || '';
+    document.getElementById('cta-phone-url').value = contentData.cta_buttons?.phone?.url || '';
+}
+
+// Load navigation menu
+function loadNavigationMenu() {
+    const menuList = document.getElementById('nav-menu-list');
+    if (!menuList || !contentData.navigation?.main_menu) return;
+    
+    menuList.innerHTML = contentData.navigation.main_menu.map((item, index) => `
+        <div class="nav-menu-item" data-index="${index}">
+            <span class="drag-handle">☰</span>
+            <div class="nav-item-content">
+                <input type="text" placeholder="Text (DE)" value="${item.text_de}" onchange="updateNavItem(${index}, 'text_de', this.value)">
+                <input type="text" placeholder="Text (EN)" value="${item.text_en}" onchange="updateNavItem(${index}, 'text_en', this.value)">
+                <input type="text" placeholder="URL" value="${item.url}" onchange="updateNavItem(${index}, 'url', this.value)">
+            </div>
+            <button class="btn btn-danger" onclick="deleteNavItem(${index})">Delete</button>
+        </div>
+    `).join('');
+}
+
+// Update navigation item
+function updateNavItem(index, field, value) {
+    if (!contentData.navigation.main_menu[index]) return;
+    contentData.navigation.main_menu[index][field] = value;
+    hasChanges = true;
+}
+
+// Delete navigation item
+function deleteNavItem(index) {
+    if (confirm('Delete this menu item?')) {
+        contentData.navigation.main_menu.splice(index, 1);
+        hasChanges = true;
+        loadNavigationMenu();
+        showToast('✅ Menu item deleted!', 'success');
+    }
+}
+
+// Add navigation item
+function addNavItem() {
+    const text_de = prompt('Menu text (German):');
+    if (!text_de) return;
+    
+    const text_en = prompt('Menu text (English):');
+    const url = prompt('URL (e.g., /#section):');
+    
+    if (!contentData.navigation) contentData.navigation = { main_menu: [] };
+    if (!contentData.navigation.main_menu) contentData.navigation.main_menu = [];
+    
+    contentData.navigation.main_menu.push({
+        id: 'nav' + Date.now(),
+        text_de: text_de,
+        text_en: text_en || text_de,
+        url: url || '#',
+        order: contentData.navigation.main_menu.length + 1
+    });
+    
+    hasChanges = true;
+    loadNavigationMenu();
+    showToast('✅ Menu item added!', 'success');
+}
+
+// Load Code Injection data
+function loadCodeInjection() {
+    if (!contentData.code_injection) return;
+    
+    document.getElementById('code-head').value = contentData.code_injection.head_scripts || '';
+    document.getElementById('code-body').value = contentData.code_injection.body_scripts || '';
+    document.getElementById('code-opentable').value = contentData.code_injection.opentable_widget || '';
+}
+
+// Load AI Optimization data
+function loadAIOptimization() {
+    if (!contentData.ai_optimization) return;
+    
+    // Load FAQ
+    loadFAQList();
+    
+    // Load voice search phrases
+    const phrases = contentData.ai_optimization.voice_search_phrases || [];
+    document.getElementById('ai-voice-phrases').value = phrases.join(', ');
+    
+    // Load AI description
+    document.getElementById('ai-description').value = contentData.ai_optimization.ai_description || '';
+    
+    // Load ChatGPT tags
+    const tags = contentData.ai_optimization.chatgpt_tags || {};
+    document.getElementById('ai-cuisine').value = tags.cuisine_type || '';
+    document.getElementById('ai-price').value = tags.price_level || '';
+    document.getElementById('ai-specialties').value = (tags.specialties || []).join(', ');
+    document.getElementById('ai-best-for').value = (tags.best_for || []).join(', ');
+    
+    // Load Schema.org data
+    const schema = contentData.schema_enhanced || {};
+    document.getElementById('schema-chef-name').value = schema.chef?.name || '';
+    document.getElementById('schema-chef-since').value = schema.chef?.since || '';
+    document.getElementById('schema-rating').value = schema.average_rating || '';
+    document.getElementById('schema-reviews').value = schema.review_count || '';
+}
+
+// Load FAQ list
+function loadFAQList() {
+    const faqList = document.getElementById('faq-list');
+    if (!faqList) return;
+    
+    const faqs = contentData.ai_optimization?.faq || [];
+    
+    if (faqs.length === 0) {
+        faqList.innerHTML = '<p class="info-text">No FAQs yet. Click "Add FAQ" to get started.</p>';
+        return;
+    }
+    
+    faqList.innerHTML = faqs.map((faq, index) => `
+        <div class="faq-item">
+            <div class="faq-item-header">
+                <h4>FAQ #${index + 1}</h4>
+                <button class="btn btn-danger" onclick="deleteFAQ(${index})">Delete</button>
+            </div>
+            <div class="form-group">
+                <label>Question (German)</label>
+                <textarea class="form-control" rows="2" onchange="updateFAQ(${index}, 'question_de', this.value)">${faq.question_de}</textarea>
+            </div>
+            <div class="form-group">
+                <label>Question (English)</label>
+                <textarea class="form-control" rows="2" onchange="updateFAQ(${index}, 'question_en', this.value)">${faq.question_en}</textarea>
+            </div>
+            <div class="form-group">
+                <label>Answer (German)</label>
+                <textarea class="form-control" rows="3" onchange="updateFAQ(${index}, 'answer_de', this.value)">${faq.answer_de}</textarea>
+            </div>
+            <div class="form-group">
+                <label>Answer (English)</label>
+                <textarea class="form-control" rows="3" onchange="updateFAQ(${index}, 'answer_en', this.value)">${faq.answer_en}</textarea>
+            </div>
+        </div>
+    `).join('');
+}
+
+// Update FAQ
+function updateFAQ(index, field, value) {
+    if (!contentData.ai_optimization.faq[index]) return;
+    contentData.ai_optimization.faq[index][field] = value;
+    hasChanges = true;
+}
+
+// Delete FAQ
+function deleteFAQ(index) {
+    if (confirm('Delete this FAQ?')) {
+        contentData.ai_optimization.faq.splice(index, 1);
+        hasChanges = true;
+        loadFAQList();
+        showToast('✅ FAQ deleted!', 'success');
+    }
+}
+
+// Add FAQ
+function addFAQ() {
+    const question_de = prompt('Question (German):');
+    if (!question_de) return;
+    
+    const question_en = prompt('Question (English):');
+    const answer_de = prompt('Answer (German):');
+    const answer_en = prompt('Answer (English):');
+    
+    if (!contentData.ai_optimization) contentData.ai_optimization = { faq: [] };
+    if (!contentData.ai_optimization.faq) contentData.ai_optimization.faq = [];
+    
+    contentData.ai_optimization.faq.push({
+        id: 'faq' + Date.now(),
+        question_de: question_de,
+        question_en: question_en || question_de,
+        answer_de: answer_de || '',
+        answer_en: answer_en || answer_de || ''
+    });
+    
+    hasChanges = true;
+    loadFAQList();
+    showToast('✅ FAQ added!', 'success');
+}
+
+// Handle favicon upload
+async function handleFaviconUpload(e) {
+    const file = e.target.files[0];
+    if (!file) return;
+    
+    showToast('📤 Uploading favicon...', 'success');
+    
+    const formData = new FormData();
+    formData.append('favicon', file);
+    
+    try {
+        const response = await fetch('api/upload-favicon.php', {
+            method: 'POST',
+            body: formData
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+            showToast('✅ Favicon generated successfully!', 'success');
+            // Reload favicon preview
+            setTimeout(() => {
+                location.reload();
+            }, 1000);
+        } else {
+            throw new Error(result.message || 'Upload failed');
+        }
+    } catch (error) {
+        console.error('Favicon upload error:', error);
+        showToast('❌ Favicon upload failed: ' + error.message, 'error');
+    }
+}
+
+// Preview changes
+async function previewChanges() {
+    showToast('🔄 Generating preview...', 'success');
+    
+    try {
+        const response = await fetch('api/preview.php', {
+            method: 'POST'
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+            showToast('✅ Preview generated!', 'success');
+            
+            // Show preview links
+            const previewLinks = document.getElementById('preview-links');
+            const linkDE = document.getElementById('preview-link-de');
+            const linkEN = document.getElementById('preview-link-en');
+            
+            linkDE.href = result.preview_url_de;
+            linkEN.href = result.preview_url_en;
+            
+            previewLinks.style.display = 'block';
+            
+            // Auto-open German preview
+            window.open(result.preview_url_de, '_blank');
+        } else {
+            throw new Error(result.message || 'Preview generation failed');
+        }
+    } catch (error) {
+        console.error('Preview error:', error);
+        showToast('❌ Preview failed: ' + error.message, 'error');
+    }
+}
+
+// Publish to live website
+async function publishWebsite() {
+    if (!confirm('Are you sure you want to publish these changes to the live website?')) {
+        return;
+    }
+    
+    showToast('🚀 Publishing to live website...', 'success');
+    
+    try {
+        const response = await fetch('api/publish.php', {
+            method: 'POST'
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+            showToast('✅ Website published successfully!', 'success');
+            hasChanges = false;
+            
+            // Add to publish history
+            addPublishHistory(result.timestamp);
+        } else {
+            throw new Error(result.message || 'Publish failed');
+        }
+    } catch (error) {
+        console.error('Publish error:', error);
+        showToast('❌ Publish failed: ' + error.message, 'error');
+    }
+}
+
+// Add publish history entry
+function addPublishHistory(timestamp) {
+    const historyDiv = document.getElementById('publish-history');
+    if (!historyDiv) return;
+    
+    const entry = document.createElement('div');
+    entry.className = 'history-item';
+    entry.innerHTML = `
+        <span class="timestamp">${timestamp}</span>
+        <span class="status success">Published</span>
+    `;
+    
+    historyDiv.insertBefore(entry, historyDiv.firstChild);
+}
+
+// Initialize new event listeners
+function initNewEventListeners() {
+    // Add navigation item button
+    const btnAddNav = document.getElementById('btn-add-nav-item');
+    if (btnAddNav) {
+        btnAddNav.addEventListener('click', addNavItem);
+    }
+    
+    // Favicon upload
+    const faviconUpload = document.getElementById('favicon-upload');
+    if (faviconUpload) {
+        faviconUpload.addEventListener('change', handleFaviconUpload);
+    }
+    
+    // Add FAQ button
+    const btnAddFAQ = document.getElementById('btn-add-faq');
+    if (btnAddFAQ) {
+        btnAddFAQ.addEventListener('click', addFAQ);
+    }
+    
+    // Preview button
+    const btnPreview = document.getElementById('btn-preview');
+    if (btnPreview) {
+        btnPreview.addEventListener('click', previewChanges);
+    }
+    
+    // Publish button
+    const btnPublish = document.getElementById('btn-publish');
+    if (btnPublish) {
+        btnPublish.addEventListener('click', publishWebsite);
+    }
+    
+    // Save draft button
+    const btnSaveDraft = document.getElementById('btn-save-draft');
+    if (btnSaveDraft) {
+        btnSaveDraft.addEventListener('click', saveContent);
+    }
+}
+
+// Enhanced populate fields to include new sections
+function populateAllFields() {
+    populateFields(); // Original function
+    loadLinksData();
+    loadCodeInjection();
+    loadAIOptimization();
+}
+
+// Override the original loadContent to include new data
+const originalLoadContent = loadContent;
+loadContent = async function() {
+    await originalLoadContent();
+    populateAllFields();
+    initNewEventListeners();
+};

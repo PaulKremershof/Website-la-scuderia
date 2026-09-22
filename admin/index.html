@@ -32,13 +32,33 @@
                     <span class="icon">📝</span>
                     Page Content
                 </a>
+                <a href="#" class="nav-item" data-section="links">
+                    <span class="icon">🔗</span>
+                    Links & Navigation
+                </a>
                 <a href="#" class="nav-item" data-section="images">
                     <span class="icon">🖼️</span>
-                    Images
+                    Images & Media
+                </a>
+                <a href="#" class="nav-item" data-section="favicon">
+                    <span class="icon">🎨</span>
+                    Favicon
+                </a>
+                <a href="#" class="nav-item" data-section="code">
+                    <span class="icon">💻</span>
+                    Code Injection
+                </a>
+                <a href="#" class="nav-item" data-section="ai">
+                    <span class="icon">🤖</span>
+                    AI Optimization
                 </a>
                 <a href="#" class="nav-item" data-section="menu">
                     <span class="icon">🍽️</span>
                     Menu
+                </a>
+                <a href="#" class="nav-item" data-section="publish">
+                    <span class="icon">🚀</span>
+                    Preview & Publish
                 </a>
             </nav>
             <div class="sidebar-footer">
@@ -241,6 +261,214 @@
                     </div>
                 </section>
 
+                <!-- Links & Navigation Section -->
+                <section id="section-links" class="section">
+                    <div class="card">
+                        <h3>Main Navigation Menu</h3>
+                        <p class="info-text">🔗 Edit your main navigation menu items. Drag to reorder.</p>
+                        
+                        <div id="nav-menu-list">
+                            <!-- Navigation items will be loaded dynamically -->
+                        </div>
+                        
+                        <button class="btn btn-secondary" id="btn-add-nav-item">+ Add Menu Item</button>
+                    </div>
+
+                    <div class="card">
+                        <h3>Social Media Links</h3>
+                        <div class="form-group">
+                            <label>Instagram URL</label>
+                            <input type="url" id="social-instagram" class="form-control" placeholder="https://www.instagram.com/...">
+                        </div>
+                        <div class="form-group">
+                            <label>Facebook URL</label>
+                            <input type="url" id="social-facebook" class="form-control" placeholder="https://www.facebook.com/...">
+                        </div>
+                        <div class="form-group">
+                            <label>Twitter URL</label>
+                            <input type="url" id="social-twitter" class="form-control" placeholder="https://twitter.com/...">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Footer Links</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Privacy Policy (DE)</label>
+                                <input type="text" id="footer-privacy-de" class="form-control" placeholder="/datenschutz">
+                            </div>
+                            <div class="form-group">
+                                <label>Privacy Policy (EN)</label>
+                                <input type="text" id="footer-privacy-en" class="form-control" placeholder="/en/privacy">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Imprint (DE)</label>
+                                <input type="text" id="footer-imprint-de" class="form-control" placeholder="/impressum">
+                            </div>
+                            <div class="form-group">
+                                <label>Imprint (EN)</label>
+                                <input type="text" id="footer-imprint-en" class="form-control" placeholder="/en/imprint">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Call-to-Action Buttons</h3>
+                        <div class="form-group">
+                            <label>Reservation Button Text (DE)</label>
+                            <input type="text" id="cta-reservation-de" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Reservation Button Text (EN)</label>
+                            <input type="text" id="cta-reservation-en" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Button URL</label>
+                            <input type="text" id="cta-phone-url" class="form-control" placeholder="tel:+4969725480">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Favicon Section -->
+                <section id="section-favicon" class="section">
+                    <div class="card">
+                        <h3>Favicon Manager</h3>
+                        <p class="info-text">🎨 Upload a square image (min 512x512px) and we'll generate all required favicon sizes automatically.</p>
+                        
+                        <div class="favicon-preview" id="favicon-preview">
+                            <h4>Current Favicon</h4>
+                            <div style="display: flex; gap: 2rem; align-items: center; margin: 1rem 0;">
+                                <div>
+                                    <p><strong>16x16</strong></p>
+                                    <img src="../favicon-16x16.png" alt="16x16 favicon" style="border: 1px solid #ddd; padding: 4px;">
+                                </div>
+                                <div>
+                                    <p><strong>32x32</strong></p>
+                                    <img src="../favicon-32x32.png" alt="32x32 favicon" style="border: 1px solid #ddd; padding: 4px;">
+                                </div>
+                                <div>
+                                    <p><strong>Apple Touch Icon</strong></p>
+                                    <img src="../apple-touch-icon.png" alt="Apple touch icon" style="width: 60px; border: 1px solid #ddd; padding: 4px;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="upload-area">
+                            <input type="file" id="favicon-upload" accept="image/png,image/jpeg" style="display: none;">
+                            <button class="btn btn-primary" onclick="document.getElementById('favicon-upload').click()">
+                                📤 Upload New Favicon
+                            </button>
+                            <p style="margin-top: 1rem; color: #666;">Supported formats: PNG, JPG (min 512x512px)</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Code Injection Section -->
+                <section id="section-code" class="section">
+                    <div class="card">
+                        <h3>Custom Code Injection</h3>
+                        <p class="info-text">💻 Add custom HTML, JavaScript, or third-party widgets to your website.</p>
+                        
+                        <div class="form-group">
+                            <label>Head Scripts (before &lt;/head&gt;)</label>
+                            <textarea id="code-head" class="form-control code-editor" rows="6" placeholder="<!-- Google Analytics, custom meta tags, etc. -->"></textarea>
+                            <small>Added to the &lt;head&gt; section of your website</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Body Scripts (before &lt;/body&gt;)</label>
+                            <textarea id="code-body" class="form-control code-editor" rows="6" placeholder="<!-- Chat widgets, analytics, etc. -->"></textarea>
+                            <small>Added before the closing &lt;/body&gt; tag</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label>OpenTable Reservation Widget</label>
+                            <textarea id="code-opentable" class="form-control code-editor" rows="4" placeholder="<script type='text/javascript' src='//www.opentable.de/widget/...'></script>"></textarea>
+                            <small>Your OpenTable widget code</small>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- AI Optimization Section -->
+                <section id="section-ai" class="section">
+                    <div class="card">
+                        <h3>FAQ for AI & Voice Search</h3>
+                        <p class="info-text">🤖 Add frequently asked questions to help AI assistants and voice search understand your restaurant better.</p>
+                        
+                        <div id="faq-list">
+                            <!-- FAQ items will be loaded dynamically -->
+                        </div>
+                        
+                        <button class="btn btn-secondary" id="btn-add-faq">+ Add FAQ</button>
+                    </div>
+
+                    <div class="card">
+                        <h3>Voice Search Optimization</h3>
+                        <div class="form-group">
+                            <label>Search Phrases (comma separated)</label>
+                            <input type="text" id="ai-voice-phrases" class="form-control" placeholder="italienisches restaurant frankfurt, beste pasta frankfurt, ...">
+                            <small>Common phrases people use to find restaurants like yours</small>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>AI Description</h3>
+                        <div class="form-group">
+                            <label>Restaurant Description for AI</label>
+                            <textarea id="ai-description" class="form-control" rows="4" placeholder="Comprehensive description for AI assistants like ChatGPT, Perplexity, etc."></textarea>
+                            <small>This helps AI assistants provide accurate information about your restaurant</small>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>ChatGPT / AI Tags</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Cuisine Type</label>
+                                <input type="text" id="ai-cuisine" class="form-control" placeholder="Italian">
+                            </div>
+                            <div class="form-group">
+                                <label>Price Level</label>
+                                <input type="text" id="ai-price" class="form-control" placeholder="€€€">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Specialties (comma separated)</label>
+                            <input type="text" id="ai-specialties" class="form-control" placeholder="Fresh Pasta, Wine Selection, Garden Dining">
+                        </div>
+                        <div class="form-group">
+                            <label>Best For (comma separated)</label>
+                            <input type="text" id="ai-best-for" class="form-control" placeholder="Business Dinners, Romantic Dates, Wine Lovers">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Enhanced Schema.org Data</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Chef Name</label>
+                                <input type="text" id="schema-chef-name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Chef Since</label>
+                                <input type="text" id="schema-chef-since" class="form-control" placeholder="2005">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Average Rating</label>
+                                <input type="number" id="schema-rating" class="form-control" step="0.1" min="0" max="5" placeholder="4.5">
+                            </div>
+                            <div class="form-group">
+                                <label>Review Count</label>
+                                <input type="number" id="schema-reviews" class="form-control" placeholder="150">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <!-- Menu Section -->
                 <section id="section-menu" class="section">
                     <div class="card">
@@ -251,6 +479,45 @@
                         
                         <div id="menu-container">
                             <!-- Menu items will be loaded dynamically -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Preview & Publish Section -->
+                <section id="section-publish" class="section">
+                    <div class="card">
+                        <h3>Preview & Publish</h3>
+                        <p class="info-text">🚀 Preview your changes before publishing them to the live website.</p>
+                        
+                        <div class="publish-workflow">
+                            <div class="workflow-step">
+                                <h4>1. Save as Draft</h4>
+                                <p>Save your changes to the database without publishing</p>
+                                <button class="btn btn-secondary" id="btn-save-draft">💾 Save Draft</button>
+                            </div>
+
+                            <div class="workflow-step">
+                                <h4>2. Preview Changes</h4>
+                                <p>See how your changes will look before going live</p>
+                                <button class="btn btn-primary" id="btn-preview">👁️ Generate Preview</button>
+                                <div id="preview-links" style="margin-top: 1rem; display: none;">
+                                    <a href="#" id="preview-link-de" target="_blank" class="btn btn-secondary">Preview German</a>
+                                    <a href="#" id="preview-link-en" target="_blank" class="btn btn-secondary">Preview English</a>
+                                </div>
+                            </div>
+
+                            <div class="workflow-step">
+                                <h4>3. Publish Live</h4>
+                                <p>Publish your changes to the live website</p>
+                                <button class="btn btn-primary" id="btn-publish" style="background: var(--success);">🚀 Publish to Live Website</button>
+                            </div>
+                        </div>
+
+                        <div class="card" style="margin-top: 2rem;">
+                            <h4>Publish History</h4>
+                            <div id="publish-history">
+                                <p style="color: #666;">No publish history yet</p>
+                            </div>
                         </div>
                     </div>
                 </section>
