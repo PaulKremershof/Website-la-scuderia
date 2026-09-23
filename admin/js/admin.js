@@ -938,9 +938,15 @@ function initGitHubUI() {
         setupBtn.addEventListener('click', showGitHubModal);
     }
 
-    // Publish button click
+    // Publish button click (header)
     if (publishBtn) {
         publishBtn.addEventListener('click', publishToGitHub);
+    }
+    
+    // Publish button click (publish section)
+    const publishSectionBtn = document.getElementById('btn-publish-section');
+    if (publishSectionBtn) {
+        publishSectionBtn.addEventListener('click', publishToGitHub);
     }
 
     // Modal buttons
