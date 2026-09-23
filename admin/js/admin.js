@@ -6,6 +6,15 @@ let hasChanges = false;
 // Initialize
 document.addEventListener('DOMContentLoaded', function() {
     console.log('CMS Admin initialized');
+    
+    // Show warning banner if on GitHub Pages
+    if (!isLocalhost()) {
+        const warning = document.getElementById('github-warning');
+        if (warning) {
+            warning.style.display = 'block';
+        }
+    }
+    
     showLoading(true);
     loadContent();
     initNavigation();
@@ -155,6 +164,13 @@ function initEventListeners() {
     });
 }
 
+// Check if we're running on localhost or GitHub Pages
+function isLocalhost() {
+    return window.location.hostname === 'localhost' || 
+           window.location.hostname === '127.0.0.1' ||
+           window.location.hostname === '';
+}
+
 // Save content
 async function saveContent() {
     // Collect data from form
@@ -252,28 +268,56 @@ async function saveContent() {
         contentData.schema_enhanced.review_count = parseInt(document.getElementById('schema-reviews').value) || 0;
     }
 
-    try {
-        const response = await fetch('api/save.php', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(contentData)
-        });
+    // Check if running on localhost (PHP backend available)
+    if (isLocalhost()) {
+        try {
+            const response = await fetch('api/save.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(contentData)
+            });
 
-        if (response.ok) {
-            hasChanges = false;
-            showToast('✅ Changes saved successfully!', 'success');
-        } else {
-            throw new Error('Save failed');
+            if (response.ok) {
+                hasChanges = false;
+                showToast('✅ Changes saved successfully!', 'success');
+                // Also save to localStorage as backup
+                localStorage.setItem('lascuderia_content', JSON.stringify(contentData));
+            } else {
+                throw new Error('Save failed');
+            }
+        } catch (error) {
+            console.error('Error saving:', error);
+            showToast('❌ Error saving to server. Saved to browser storage instead.', 'error');
+            localStorage.setItem('lascuderia_content', JSON.stringify(contentData));
         }
-    } catch (error) {
-        console.error('Error saving:', error);
-        showToast('❌ Error saving changes. Using local storage as backup.', 'error');
-        // Fallback to localStorage
+    } else {
+        // Running on GitHub Pages - offer download instead
+        showToast('⚠️ Cannot save directly on GitHub Pages. Download the file and commit it manually.', 'error');
+        
+        // Save to localStorage
         localStorage.setItem('lascuderia_content', JSON.stringify(contentData));
-        showToast('💾 Saved to browser storage', 'success');
+        
+        // Automatically trigger download
+        downloadContentJSON();
+        
+        showToast('💾 File downloaded! Upload it to /data/content.json and push to GitHub.', 'success');
     }
+}
+
+// Download content.json file
+function downloadContentJSON() {
+    const dataStr = JSON.stringify(contentData, null, 2);
+    const dataBlob = new Blob([dataStr], { type: 'application/json' });
+    const url = URL.createObjectURL(dataBlob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'content.json';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
 }
 
 // Load images
