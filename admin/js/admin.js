@@ -7,6 +7,9 @@ let hasChanges = false;
 document.addEventListener('DOMContentLoaded', function() {
     console.log('CMS Admin initialized');
     
+    // Initialize GitHub integration UI
+    initGitHubUI();
+    
     // Show warning banner if on GitHub Pages
     if (!isLocalhost()) {
         const warning = document.getElementById('github-warning');
@@ -898,3 +901,176 @@ loadContent = async function() {
     populateAllFields();
     initNewEventListeners();
 };
+
+// ============================================
+// GITHUB INTEGRATION
+// ============================================
+
+// Initialize GitHub UI
+function initGitHubUI() {
+    const setupBtn = document.getElementById('btn-github-setup');
+    const publishBtn = document.getElementById('btn-publish');
+    
+    // Check if GitHub token exists
+    if (window.githubIntegration && window.githubIntegration.isAuthenticated()) {
+        // Show publish button
+        if (publishBtn) publishBtn.style.display = 'inline-block';
+        if (setupBtn) setupBtn.style.display = 'none';
+    } else {
+        // Show setup button
+        if (setupBtn) setupBtn.style.display = 'inline-block';
+        if (publishBtn) publishBtn.style.display = 'none';
+    }
+
+    // Setup button click
+    if (setupBtn) {
+        setupBtn.addEventListener('click', showGitHubModal);
+    }
+
+    // Publish button click
+    if (publishBtn) {
+        publishBtn.addEventListener('click', publishToGitHub);
+    }
+
+    // Modal buttons
+    const modal = document.getElementById('github-modal');
+    const cancelBtn = document.getElementById('btn-cancel-github');
+    const saveTokenBtn = document.getElementById('btn-save-github-token');
+
+    if (cancelBtn) {
+        cancelBtn.addEventListener('click', hideGitHubModal);
+    }
+
+    if (saveTokenBtn) {
+        saveTokenBtn.addEventListener('click', saveGitHubToken);
+    }
+
+    // Close modal on background click
+    if (modal) {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                hideGitHubModal();
+            }
+        });
+    }
+}
+
+// Show GitHub setup modal
+function showGitHubModal() {
+    const modal = document.getElementById('github-modal');
+    if (modal) {
+        modal.style.display = 'flex';
+    }
+}
+
+// Hide GitHub setup modal
+function hideGitHubModal() {
+    const modal = document.getElementById('github-modal');
+    if (modal) {
+        modal.style.display = 'none';
+    }
+}
+
+// Save GitHub token
+async function saveGitHubToken() {
+    const input = document.getElementById('github-token-input');
+    const token = input.value.trim();
+
+    if (!token) {
+        showToast('⚠️ Please enter a token', 'error');
+        return;
+    }
+
+    if (!token.startsWith('ghp_') && !token.startsWith('github_pat_')) {
+        showToast('⚠️ Invalid token format. Should start with ghp_ or github_pat_', 'error');
+        return;
+    }
+
+    showToast('🔄 Testing token...', 'success');
+
+    // Save token
+    window.githubIntegration.saveToken(token);
+
+    // Test authentication
+    const isValid = await window.githubIntegration.testAuth();
+
+    if (isValid) {
+        showToast('✅ GitHub token saved successfully!', 'success');
+        hideGitHubModal();
+        input.value = '';
+        
+        // Update UI
+        initGitHubUI();
+    } else {
+        showToast('❌ Invalid token. Please check and try again.', 'error');
+        window.githubIntegration.clearToken();
+    }
+}
+
+// Publish to GitHub
+async function publishToGitHub() {
+    if (!window.githubIntegration || !window.githubIntegration.isAuthenticated()) {
+        showToast('⚠️ Please setup GitHub integration first', 'error');
+        showGitHubModal();
+        return;
+    }
+
+    if (!confirm('Are you sure you want to publish these changes to GitHub?\n\nThis will:\n1. Update content.json\n2. Rebuild index.html\n3. Commit to GitHub\n4. Deploy to GitHub Pages (1-2 min)')) {
+        return;
+    }
+
+    // Collect current data from form
+    collectFormData();
+
+    showToast('🚀 Publishing to GitHub...', 'success');
+
+    try {
+        await window.githubIntegration.publish(contentData, 'Update website content via CMS');
+        
+        hasChanges = false;
+        showToast('✅ Successfully published to GitHub! Changes will be live in 1-2 minutes.', 'success');
+        
+        // Also save to localStorage as backup
+        localStorage.setItem('lascuderia_content', JSON.stringify(contentData));
+        
+    } catch (error) {
+        console.error('Publish error:', error);
+        showToast(`❌ Publish failed: ${error.message}`, 'error');
+    }
+}
+
+// Collect form data into contentData
+function collectFormData() {
+    // SEO
+    contentData.seo.title_de = document.getElementById('seo-title-de').value;
+    contentData.seo.title_en = document.getElementById('seo-title-en').value;
+    contentData.seo.description_de = document.getElementById('seo-description-de').value;
+    contentData.seo.description_en = document.getElementById('seo-description-en').value;
+    contentData.seo.keywords = document.getElementById('seo-keywords').value;
+
+    // Contact
+    contentData.contact.name = document.getElementById('contact-name').value;
+    contentData.contact.phone = document.getElementById('contact-phone').value;
+    contentData.contact.email = document.getElementById('contact-email').value;
+    contentData.contact.address = document.getElementById('contact-address').value;
+    contentData.contact.postal_code = document.getElementById('contact-postal').value;
+    contentData.contact.city = document.getElementById('contact-city').value;
+    contentData.contact.instagram = document.getElementById('contact-instagram').value;
+
+    // Opening Hours
+    contentData.opening_hours.days = document.getElementById('hours-days').value;
+    contentData.opening_hours.lunch = document.getElementById('hours-lunch').value;
+    contentData.opening_hours.dinner = document.getElementById('hours-dinner').value;
+    contentData.opening_hours.note = document.getElementById('hours-note').value;
+
+    // Content sections
+    contentData.sections.hero_quote.text_de = document.getElementById('content-hero-de').value;
+    contentData.sections.hero_quote.text_en = document.getElementById('content-hero-en').value;
+    contentData.sections.hero_quote.author = document.getElementById('content-hero-author').value;
+    contentData.sections.restaurant.text_de = document.getElementById('content-restaurant-de').value;
+    contentData.sections.restaurant.text_en = document.getElementById('content-restaurant-en').value;
+    contentData.sections.kitchen.text_de = document.getElementById('content-kitchen-de').value;
+    contentData.sections.kitchen.text_en = document.getElementById('content-kitchen-en').value;
+    contentData.sections.wine.text_de = document.getElementById('content-wine-de').value;
+    contentData.sections.wine.text_en = document.getElementById('content-wine-en').value;
+}

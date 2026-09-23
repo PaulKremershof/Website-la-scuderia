@@ -83,8 +83,10 @@
             <header class="header">
                 <h2 id="section-title">SEO Settings</h2>
                 <div class="header-actions">
+                    <button class="btn btn-secondary" id="btn-github-setup" style="display: none;">🔑 Setup GitHub</button>
                     <button class="btn btn-secondary" id="btn-reset">Reset Changes</button>
-                    <button class="btn btn-primary" id="btn-save">💾 Save All Changes</button>
+                    <button class="btn btn-primary" id="btn-save">💾 Save Locally</button>
+                    <button class="btn btn-success" id="btn-publish" style="display: none; background: #28a745;">🚀 Publish to GitHub</button>
                 </div>
             </header>
 
@@ -538,6 +540,38 @@
     <!-- Toast Notification -->
     <div id="toast" class="toast"></div>
 
+    <!-- GitHub Setup Modal -->
+    <div id="github-modal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7); z-index: 9999; align-items: center; justify-content: center;">
+        <div style="background: white; padding: 2rem; border-radius: 12px; max-width: 600px; width: 90%;">
+            <h2 style="margin-top: 0;">🔑 GitHub Integration Setup</h2>
+            <p>To publish directly to GitHub, you need a Personal Access Token.</p>
+            
+            <div style="background: #f8f9fa; padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                <h4 style="margin-top: 0;">How to create a token:</h4>
+                <ol style="margin: 0; padding-left: 1.5rem;">
+                    <li>Go to <a href="https://github.com/settings/tokens/new" target="_blank">GitHub Token Settings</a></li>
+                    <li>Click "Generate new token" → "Generate new token (classic)"</li>
+                    <li>Name it: <code>La Scuderia CMS</code></li>
+                    <li>Select scopes: <code>repo</code> (full control of private repositories)</li>
+                    <li>Click "Generate token"</li>
+                    <li>Copy the token and paste it below</li>
+                </ol>
+            </div>
+
+            <div style="margin: 1.5rem 0;">
+                <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;">GitHub Personal Access Token:</label>
+                <input type="password" id="github-token-input" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 6px; font-family: monospace;">
+                <small style="color: #666; display: block; margin-top: 0.5rem;">Your token is stored locally in your browser and never sent anywhere except GitHub.</small>
+            </div>
+
+            <div style="display: flex; gap: 1rem; justify-content: flex-end;">
+                <button id="btn-cancel-github" style="padding: 0.75rem 1.5rem; border: 1px solid #ddd; background: white; border-radius: 6px; cursor: pointer;">Cancel</button>
+                <button id="btn-save-github-token" style="padding: 0.75rem 1.5rem; border: none; background: #28a745; color: white; border-radius: 6px; cursor: pointer; font-weight: bold;">💾 Save Token</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/github-integration.js"></script>
     <script src="js/admin.js"></script>
 </body>
 </html>
