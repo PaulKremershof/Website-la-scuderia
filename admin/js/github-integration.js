@@ -72,8 +72,13 @@ class GitHubIntegration {
         const url = `https://api.github.com/repos/${this.owner}/${this.repo}/contents/${path}`;
         
         // Properly encode UTF-8 content to Base64
+        // Use a more robust method that handles large files and special characters
         const utf8Bytes = new TextEncoder().encode(content);
-        const base64Content = btoa(String.fromCharCode(...utf8Bytes));
+        let binary = '';
+        for (let i = 0; i < utf8Bytes.length; i++) {
+            binary += String.fromCharCode(utf8Bytes[i]);
+        }
+        const base64Content = btoa(binary);
         
         const body = {
             message: message,
