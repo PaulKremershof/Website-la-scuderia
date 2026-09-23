@@ -908,17 +908,28 @@ loadContent = async function() {
 
 // Initialize GitHub UI
 function initGitHubUI() {
+    console.log('🔧 Initializing GitHub UI...');
+    
     const setupBtn = document.getElementById('btn-github-setup');
     const publishBtn = document.getElementById('btn-publish');
     
+    console.log('Setup button:', setupBtn);
+    console.log('Publish button:', publishBtn);
+    console.log('GitHub integration:', window.githubIntegration);
+    
     // Check if GitHub token exists
     if (window.githubIntegration && window.githubIntegration.isAuthenticated()) {
+        console.log('✅ GitHub token found - showing publish button');
         // Show publish button
         if (publishBtn) publishBtn.style.display = 'inline-block';
         if (setupBtn) setupBtn.style.display = 'none';
     } else {
+        console.log('⚠️ No GitHub token - showing setup button');
         // Show setup button
-        if (setupBtn) setupBtn.style.display = 'inline-block';
+        if (setupBtn) {
+            setupBtn.style.display = 'inline-block';
+            console.log('Setup button should now be visible');
+        }
         if (publishBtn) publishBtn.style.display = 'none';
     }
 
