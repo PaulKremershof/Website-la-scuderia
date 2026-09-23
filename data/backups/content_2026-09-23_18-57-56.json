@@ -1,0 +1,252 @@
+{
+    "seo": {
+        "title_de": "La Scuderia - Italienisches Restaurant im Frankfurter Westend",
+        "title_en": "La Scuderia - Italian Restaurant in Frankfurt's Westend",
+        "description_de": "Klassisch moderne italienische Küche im Herzen des Frankfurter Westends. Elegantes Ambiente, großer Gartenbereich und traditionelle italienische Kochkunst seit 2005.",
+        "description_en": "Classic modern Italian cuisine in the heart of Frankfurt's Westend. Elegant ambiance, large garden area, and traditional Italian culinary art since 2005.",
+        "keywords": "italienisches restaurant, frankfurt, westend, la scuderia, italienische küche"
+    },
+    "contact": {
+        "name": "La Scuderia",
+        "address": "Feuerbachstr. 23",
+        "city": "Frankfurt am Main",
+        "postal_code": "60325",
+        "phone": "069 72 54 80",
+        "email": "info@la-scuderia.de",
+        "instagram": "https:\/\/www.instagram.com\/lascuderia_frankfurt\/?hl=de"
+    },
+    "opening_hours": {
+        "days": "Montag - Samstag",
+        "lunch": "12.00 - 15.01 Uhr",
+        "dinner": "18.30 - 24.00 Uhr",
+        "note": "Unser Restaurant ist klimatisiert."
+    },
+    "sections": {
+        "hero_quote": {
+            "text_de": "Restaurants wie La Scuderia füllen eine große Lücke. Der Italiener setzt auf zeitlose Qualität und ist für die Restaurantkultur der Main Metropole unverzichtbar.",
+            "text_en": "Restaurants like La Scuderia fill a great gap. This Italian restaurant focuses on timeless quality and is indispensable for the restaurant culture of the Main metropolis.",
+            "author": "Jürgen Dollase, FAS"
+        },
+        "restaurant": {
+            "title_de": "Restaurant",
+            "title_en": "Restaurant",
+            "text_de": "Klassisch moderne italienische Küche im Herzen des Frankfurter Westends. Großzügiges, elegantes Ambiente. Im Sommer großer, geschützter und heller Gartenbereich, der zu ausgedehnten Mittags-und Abendessen einlädt. Stammgäste schätzen die persönliche Beratung und die diskrete Atmosphäre.",
+            "text_en": "Classic modern Italian cuisine in the heart of Frankfurt's Westend. Spacious, elegant ambiance. In summer, a large, sheltered and bright garden area invites you to enjoy extended lunch and dinner. Regular guests appreciate the personal service and discreet atmosphere."
+        },
+        "kitchen": {
+            "title_de": "Küche",
+            "title_en": "Cuisine",
+            "text_de": "Massimo Desortes leitet die Küche seit 2005. Im Vordergrund steht eine traditionelle, zuverlässige und handwerklich feine italienische Kochkunst.",
+            "text_en": "Massimo Desortes has been leading the kitchen since 2005. The focus is on traditional, reliable and artisanal Italian culinary art."
+        },
+        "wine": {
+            "title_de": "Weine",
+            "title_en": "Wines",
+            "text_de": "Unser italienischer Weinkeller wurde mit viel Hingabe und Leidenschaft zusammengestellt und ist seit 2005 kontinuierlich gewachsen.",
+            "text_en": "Our Italian wine cellar has been compiled with great dedication and passion and has been continuously growing since 2005."
+        }
+    },
+    "menu": {
+        "categories": []
+    },
+    "navigation": {
+        "main_menu": [
+            {
+                "id": "nav1",
+                "text_de": "Reservierung & Kontakt",
+                "text_en": "Reservation & Contact",
+                "url": "\/#reservierung",
+                "order": 1
+            },
+            {
+                "id": "nav2",
+                "text_de": "Restaurant",
+                "text_en": "Restaurant",
+                "url": "\/#restaurant",
+                "order": 2
+            },
+            {
+                "id": "nav3",
+                "text_de": "Kulinarik",
+                "text_en": "Cuisine",
+                "url": "\/#kitchen",
+                "order": 3
+            }
+        ],
+        "language_switcher": {
+            "de_url": "\/",
+            "en_url": "\/en\/"
+        }
+    },
+    "social_links": {
+        "instagram": "https:\/\/www.instagram.com\/lascuderia_frankfurt\/?hl=de",
+        "facebook": "",
+        "twitter": ""
+    },
+    "footer_links": {
+        "privacy_de": "\/datenschutz",
+        "privacy_en": "\/en\/privacy",
+        "imprint_de": "\/impressum",
+        "imprint_en": "\/en\/imprint"
+    },
+    "cta_buttons": {
+        "reservation": {
+            "text_de": "Reservierung & Kontakt",
+            "text_en": "Reservation & Contact",
+            "url": "\/#reservierung",
+            "mobile_text_de": "Reservierung",
+            "mobile_text_en": "Reservation"
+        },
+        "phone": {
+            "text_de": "Jetzt anrufen",
+            "text_en": "Call Now",
+            "url": "tel:+4969725480",
+            "title_de": "Jetzt anrufen",
+            "title_en": "Call Now"
+        },
+        "hours": {
+            "text_de": "Öffnungszeiten",
+            "text_en": "Opening Hours",
+            "url": "\/#reservierung",
+            "title_de": "Öffnungszeiten",
+            "title_en": "Opening Hours"
+        }
+    },
+    "images": {
+        "logo_white": {
+            "url": "https:\/\/www.la-scuderia.de\/uploads\/logo-weiss.svg",
+            "alt_de": "La Scuderia Logo",
+            "alt_en": "La Scuderia Logo",
+            "title_de": "Logo La Scuderia",
+            "title_en": "Logo La Scuderia",
+            "category": "branding"
+        },
+        "logo_color": {
+            "url": "https:\/\/www.la-scuderia.de\/uploads\/logo-farbe.svg",
+            "alt_de": "La Scuderia Logo",
+            "alt_en": "La Scuderia Logo",
+            "title_de": "Logo La Scuderia",
+            "title_en": "Logo La Scuderia",
+            "category": "branding"
+        },
+        "header_bg": {
+            "url": "https:\/\/www.la-scuderia.de\/uploads\/headerimages\/_goodQuality\/IMG_7790.jpg",
+            "alt_de": "Restaurant Hintergrund",
+            "alt_en": "Restaurant Background",
+            "title_de": "La Scuderia Restaurant",
+            "title_en": "La Scuderia Restaurant",
+            "category": "header"
+        },
+        "header_main": {
+            "url": "https:\/\/www.la-scuderia.de\/uploads\/restaurantimages\/_goodQuality\/Bild5.jpg",
+            "alt_de": "Restaurant Innenansicht",
+            "alt_en": "Restaurant Interior",
+            "title_de": "La Scuderia Innenbereich",
+            "title_en": "La Scuderia Interior",
+            "category": "header"
+        },
+        "arrow_down": {
+            "url": "https:\/\/www.la-scuderia.de\/assets\/images\/arrow-down.svg",
+            "alt_de": "Nach unten scrollen",
+            "alt_en": "Scroll down",
+            "category": "icons"
+        },
+        "arrow_top": {
+            "url": "https:\/\/www.la-scuderia.de\/assets\/images\/arrow-top.svg",
+            "alt_de": "Nach oben scrollen",
+            "alt_en": "Scroll to top",
+            "category": "icons"
+        },
+        "icon_clock": {
+            "url": "https:\/\/www.la-scuderia.de\/assets\/images\/clock.svg",
+            "alt_de": "Öffnungszeiten",
+            "alt_en": "Opening Hours",
+            "title_de": "Öffnungszeiten",
+            "title_en": "Opening Hours",
+            "category": "icons"
+        },
+        "icon_phone": {
+            "url": "https:\/\/www.la-scuderia.de\/assets\/images\/phone-outline.svg",
+            "alt_de": "Jetzt anrufen",
+            "alt_en": "Call Now",
+            "title_de": "Jetzt anrufen",
+            "title_en": "Call Now",
+            "category": "icons"
+        }
+    },
+    "favicon": {
+        "ico": "\/favicon.ico",
+        "png_16": "\/favicon-16x16.png",
+        "png_32": "\/favicon-32x32.png",
+        "apple_touch": "\/apple-touch-icon.png"
+    },
+    "code_injection": {
+        "head_scripts": "",
+        "body_scripts": "",
+        "opentable_widget": "<script type='text\/javascript' src='\/\/www.opentable.de\/widget\/reservation\/loader?rid=16359&type=standard&theme=standard&color=1&dark=false&iframe=true&domain=de&lang=de-DE&newtab=false&ot_source=Restaurant%100website&cfe=true'><\/script>"
+    },
+    "ai_optimization": {
+        "faq": [
+            {
+                "id": "faq1",
+                "question_de": "Muss ich reservieren?",
+                "question_en": "Do I need a reservation?",
+                "answer_de": "Ja, wir empfehlen eine Reservierung, besonders am Wochenende und an Feiertagen. Sie können online über OpenTable oder telefonisch unter 069 72 54 80 reservieren.",
+                "answer_en": "Yes, we recommend making a reservation, especially on weekends and holidays. You can book online via OpenTable or call us at 069 72 54 80."
+            },
+            {
+                "id": "faq2",
+                "question_de": "Gibt es Parkplätze?",
+                "question_en": "Is there parking available?",
+                "answer_de": "Ja, es gibt Parkplätze in der Umgebung. Die nächsten öffentlichen Parkplätze befinden sich in der Feuerbachstraße.",
+                "answer_en": "Yes, there is parking available nearby. The nearest public parking is on Feuerbachstraße."
+            },
+            {
+                "id": "faq3",
+                "question_de": "Haben Sie vegetarische Optionen?",
+                "question_en": "Do you have vegetarian options?",
+                "answer_de": "Ja, wir bieten verschiedene vegetarische Gerichte an. Unser Team berät Sie gerne bei der Auswahl.",
+                "answer_en": "Yes, we offer various vegetarian dishes. Our team will be happy to advise you on your selection."
+            }
+        ],
+        "voice_search_phrases": [
+            "italienisches restaurant frankfurt westend",
+            "beste pasta frankfurt",
+            "restaurant mit garten frankfurt",
+            "italiener frankfurt westend",
+            "la scuderia frankfurt"
+        ],
+        "ai_description": "La Scuderia is an upscale Italian restaurant in Frankfurt's Westend district, known for traditional Italian cuisine, extensive wine cellar, and elegant garden dining. Led by Chef Massimo Desortes since 2005, the restaurant offers classic modern Italian dishes in a sophisticated atmosphere.",
+        "chatgpt_tags": {
+            "cuisine_type": "Italian",
+            "price_level": "€€€",
+            "specialties": [
+                "Fresh Pasta",
+                "Wine Selection",
+                "Garden Dining",
+                "Traditional Italian"
+            ],
+            "best_for": [
+                "Business Dinners",
+                "Romantic Dates",
+                "Wine Lovers",
+                "Special Occasions"
+            ],
+            "atmosphere": "Elegant and Sophisticated",
+            "dress_code": "Smart Casual"
+        }
+    },
+    "schema_enhanced": {
+        "chef": {
+            "name": "Massimo Desortes",
+            "since": "2005",
+            "title": "Head Chef"
+        },
+        "awards": [],
+        "average_rating": 4.5,
+        "review_count": 0,
+        "price_range": "€€€",
+        "serves_cuisine": "Italian",
+        "menu_items": []
+    }
+}
