@@ -2,8 +2,16 @@
 
 ## 🎯 Overview
 
-Your website now uses a **CMS → Build → Deploy** workflow:
+Your website has **TWO ways** to publish changes:
 
+### **Option 1: GitHub Integration (Easiest!)** ⭐ RECOMMENDED
+1. **Edit content** in the CMS
+2. **Click "Publish to GitHub"** button
+3. Done! (Changes live in 1-2 minutes)
+
+**→ See [GITHUB_INTEGRATION.md](GITHUB_INTEGRATION.md) for setup**
+
+### **Option 2: Manual Build (Traditional)**
 1. **Edit content** in the CMS (saves to `data/content.json`)
 2. **Build website** (updates `index.html` from JSON)
 3. **Deploy** (push to GitHub Pages)
@@ -12,7 +20,14 @@ Your website now uses a **CMS → Build → Deploy** workflow:
 
 ## 🚀 Quick Start
 
-### One-Command Deploy (Recommended)
+### Option 1: GitHub Integration (No Commands Needed!)
+
+1. Setup GitHub token (one-time): See [GITHUB_INTEGRATION.md](GITHUB_INTEGRATION.md)
+2. Edit in CMS: http://localhost:8000/admin/
+3. Click **"🚀 Publish to GitHub"**
+4. Wait 1-2 minutes - done!
+
+### Option 2: One-Command Deploy
 
 ```bash
 npm run deploy
