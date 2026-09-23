@@ -88,8 +88,9 @@ const openingHoursBlock = `<p>${content.opening_hours.days}</p>
 <p>${content.opening_hours.dinner}<br /></p>
 <p>${content.opening_hours.note}</p>`;
 
+// Match both regular dash (-) and en-dash (–)
 html = html.replace(
-    /<p>Montag – Samstags<\/p>\s*<p>12\.00 – 15\.00 Uhr<\/p>\s*<p>und<\/p>\s*<p>18\.30 – 24\.00 Uhr<br \/><\/p>\s*<p>Unser Restaurant ist klimatisiert\.<\/p>/,
+    /<p>Montag[\s–-]+Samstag[s]?<\/p>\s*<p>12\.00[\s–-]+15\.\d{2} Uhr<\/p>\s*<p>und<\/p>\s*<p>18\.30[\s–-]+24\.00 Uhr<br \/><\/p>\s*<p>Unser Restaurant ist klimatisiert\.<\/p>/,
     openingHoursBlock
 );
 
