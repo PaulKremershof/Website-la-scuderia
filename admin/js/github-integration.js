@@ -71,9 +71,13 @@ class GitHubIntegration {
     async updateFile(path, content, message, sha) {
         const url = `https://api.github.com/repos/${this.owner}/${this.repo}/contents/${path}`;
         
+        // Properly encode UTF-8 content to Base64
+        const utf8Bytes = new TextEncoder().encode(content);
+        const base64Content = btoa(String.fromCharCode(...utf8Bytes));
+        
         const body = {
             message: message,
-            content: btoa(unescape(encodeURIComponent(content))), // Base64 encode
+            content: base64Content,
             branch: this.branch
         };
 
@@ -252,7 +256,13 @@ class GitHubIntegration {
             // Step 3: Get current index.html
             console.log('📥 Fetching current index.html...');
             const indexFile = await this.getFile('index.html');
-            const currentHTML = atob(indexFile.content);
+            // Properly decode Base64 to UTF-8
+            const binaryString = atob(indexFile.content);
+            const bytes = new Uint8Array(binaryString.length);
+            for (let i = 0; i < binaryString.length; i++) {
+                bytes[i] = binaryString.charCodeAt(i);
+            }
+            const currentHTML = new TextDecoder().decode(bytes);
 
             // Step 4: Build new HTML
             console.log('🔨 Building HTML from JSON...');
